@@ -1,0 +1,40 @@
+.hero {
+  position: relative;
+  background: url("/img/jonny-help.avif") center center / cover no-repeat;
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 2rem;
+  mask-image: linear-gradient(to bottom, black 0%, black 80%, transparent 100%);
+}
+
+.heroContent {
+  position: relative;
+  color: white;
+  margin-left: 5vw;
+  max-width: 600px;
+  z-index: 1;
+}
+
+.heroContent h2 {
+  font-size: 3.5rem;
+  margin: 0 0 1rem;
+  font-weight: normal;
+}
+
+.heroContent h2 span {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.heroContent p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.pEmphText {
+  font-size: 2rem;
+  margin: 0 0.1rem;
+  color: var(--blue-color);
+}
