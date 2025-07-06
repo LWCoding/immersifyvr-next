@@ -5,6 +5,7 @@
   padding: 0.75rem 2rem;
   background-color: var(--navbar-color);
   color: var(--text-color);
+  position: relative;
 }
 
 .logo {
@@ -30,6 +31,27 @@
   color: #cccccc;
 }
 
+/* Hamburger Button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 2px;
+}
+
+/* Nav Links - Desktop */
 .navLinks {
   list-style: none;
   display: flex;
@@ -47,5 +69,33 @@
 
 .navLinks li a:hover,
 .navLinks li a.active {
-  color: var(--blue-color); /* Highlighted blue */
+  color: var(--blue-color);
+}
+
+/* Mobile Styles */
+@media (max-width: 968px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navLinks {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    background-color: var(--navbar-color);
+    width: 200px;
+    padding: 1rem;
+    display: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+
+  .navLinks li {
+    margin: 0.5rem 0;
+  }
+
+  .navActive {
+    display: flex;
+  }
 }

@@ -10,6 +10,6 @@ Sizes:
 - medium
 - large
 */
-export default function Spacer(props) {
-  return <div className={styles[props.size]}></div>;
+export default function Spacer({ size }) {
+  return <div className={styles[size]}></div>;
 }

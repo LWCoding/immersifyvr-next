@@ -1,4 +1,5 @@
 import styles from "./footer.module.css";
+import Spacer from "./spacer";
 
 export default function Footer() {
   return (

@@ -2,6 +2,7 @@
   background-color: var(--footer-color);
   color: var(--text-color);
   padding: 2rem;
+  margin-top: 2rem;
 }
 
 .footerContainer {

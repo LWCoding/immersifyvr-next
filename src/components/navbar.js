@@ -1,9 +1,17 @@
+"use client";
+
+import { useState } from "react";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 import Image from "next/image";
 import styles from "./navbar.module.css";
 
 import QuoteButton from "./quoteButton";
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
@@ -18,23 +26,55 @@ export default function Header() {
           <p>Virtual Reality for Seniors</p>
         </div>
       </div>
-      <ul className={styles.navLinks}>
+
+      {/* Hamburger icon */}
+      <button
+        className={styles.hamburger}
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Toggle navigation menu"
+      >
+        <span className={styles.bar}></span>
+        <span className={styles.bar}></span>
+        <span className={styles.bar}></span>
+      </button>
+
+      <ul className={`${styles.navLinks} ${menuOpen ? styles.navActive : ""}`}>
         <li>
-          <a href="/" className={styles.active}>
+          <Link href="/" className={pathname === "/" ? styles.active : ""}>
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/product">Product</a>
+          <Link
+            href="/product"
+            className={pathname.startsWith("/product") ? styles.active : ""}
+          >
+            Product
+          </Link>
         </li>
         <li>
-          <a href="/services">Services</a>
+          <Link
+            href="/services"
+            className={pathname.startsWith("/services") ? styles.active : ""}
+          >
+            Services
+          </Link>
         </li>
         <li>
-          <a href="/our-team">Our Team</a>
+          <Link
+            href="/our-team"
+            className={pathname.startsWith("/our-team") ? styles.active : ""}
+          >
+            Our Team
+          </Link>
         </li>
         <li>
-          <a href="/contact">Contact</a>
+          <Link
+            href="/contact"
+            className={pathname.startsWith("/contact") ? styles.active : ""}
+          >
+            Contact
+          </Link>
         </li>
         <li>
           <QuoteButton />

@@ -1,11 +1,83 @@
+import style from "./page.module.css";
+
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import ImageHeader from "@/components/imageHeader";
+import ContentBlock from "@/components/contentBlock";
+import SideBySide from "@/components/sideBySide";
 
 export default function Product() {
   return (
     <div>
       <Navbar />
-      <h1>Product</h1>
+      <ImageHeader title="Product" backgroundImage="/img/beach-view.avif" />
+      <ContentBlock titleText="What We Offer">
+        <SideBySide>
+          <div>
+            <h2>Engaging Motivation</h2>
+            <p>
+              Our application also provides motivation to exercise through
+              entertaining VR activities like swimming to catch fish. Instead of
+              providing generalized and basic exercise, our application combines
+              physical activity into an engaging environment.
+            </p>
+          </div>
+          <div>
+            <h2>Safe Exercise</h2>
+            <p>
+              Our innovation utilizes virtual reality to provide a stress and
+              danger-free environment for the elderly and disabled to overcome
+              daily limitations. Especially for seniors, going out to exercise,
+              for example, going to a swimming pool, can put them at extreme
+              risk of harm. However, virtual reality allows anyone to immerse
+              themselves in a realistic experience in any safe space they
+              choose.
+            </p>
+          </div>
+          <div>
+            <h2>Immersive Technology</h2>
+            <p>
+              By utilizing Unity's XR Interaction Toolkit, we were able to
+              develop an experience with visually pleasing aesthetics and
+              intuitive controls, helping us reach our goal of making our
+              experience feel as simple and effective as possible. We are
+              constantly developing new engaging storylines and activities to
+              provide unique options of exercise for all.
+            </p>
+          </div>
+        </SideBySide>
+      </ContentBlock>
+      <ContentBlock titleText="Example Experiences">
+        <SideBySide>
+          <div>
+            <h2>Virtual Swimming</h2>
+            <p>
+              Swim around in a virtual ocean environment and catch as many fish
+              as you can! Users can expect a low-moderate intensity upper body
+              workout.
+            </p>
+          </div>
+          <div>
+            <h2>Spaceball</h2>
+            <p>TBD.</p>
+          </div>
+          <div>
+            <h2>TBD</h2>
+            <p>TBD</p>
+          </div>
+        </SideBySide>
+      </ContentBlock>
+      <ContentBlock titleText="Video Demo">
+        <iframe
+          className={style.videoDemo}
+          src="https://www.youtube.com/embed/2TfVHTgI-lI?si=KEjEDv7ccGpYr-Zx"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </ContentBlock>
       <Footer />
     </div>
   );
