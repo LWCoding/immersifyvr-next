@@ -10,4 +10,5 @@
 
 .quoteButton:hover {
   background-color: var(--blue-hover-color);
+  color: white;
 }
