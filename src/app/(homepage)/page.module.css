@@ -38,3 +38,33 @@
   margin: 0 0.1rem;
   color: var(--blue-color);
 }
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 70vh;
+    padding: 0 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .heroContent {
+    margin: 0;
+    max-width: 90%;
+  }
+
+  .heroContent h2 {
+    font-size: 2.5rem;
+  }
+
+  .heroContent h2 span {
+    font-size: 3rem;
+  }
+
+  .heroContent p {
+    font-size: 1rem;
+  }
+
+  .pEmphText {
+    font-size: 1.5rem;
+  }
+}

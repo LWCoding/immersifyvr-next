@@ -17,3 +17,13 @@
   object-fit: cover;
   border-radius: 20px;
 }
+
+@media (max-width: 768px) {
+  .sideBySide {
+    flex-direction: column;
+  }
+
+  .sideBySide > * {
+    margin: 1rem 0;
+  }
+}
