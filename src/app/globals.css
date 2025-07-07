@@ -2,7 +2,9 @@
   --background: #17202b; /* Dark background */
   --text-color: white; /* Default text color */
   --blue-color: #3370ff; /* ImmersifyVR blue */
-  --navbar-color: #060b12;
+  --blue-hover-color: #2857cc; /* Hover state for blue */
+  --accent-color: #060b12; /* Accent color for cards and sections */
+  --navbar-color: #060b12; /* Navbar background color */
   --footer-color: #060b12; /* Footer background color */
 }
 
@@ -13,6 +15,9 @@
 body {
   margin: 0;
   background-color: var(--background);
-  font-family: "Montserrat", sans-serif;
   color: var(--text-color);
+}
+
+body, button {
+  font-family: "Montserrat", sans-serif;  
 }

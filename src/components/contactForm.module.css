@@ -1,0 +1,86 @@
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #1d202a;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 200px;
+}
+
+.formLabel {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: white;
+}
+
+.required {
+  color: #ccc;
+  font-weight: normal;
+}
+
+.formInput {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 0;
+  color: white;
+  font-size: 16px;
+  resize: none;
+}
+
+.formInput:focus {
+  outline: none;
+  border-bottom: 1px solid #4a90e2;
+}
+
+.submitForm {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submitForm:hover {
+  background-color: #2563eb;
+}
+
+/* Responsive stacking on smaller screens */
+@media (max-width: 600px) {
+  .fieldGroup {
+    flex-direction: column;
+  }
+
+  .submitForm {
+    align-self: stretch;
+    text-align: center;
+  }
+}

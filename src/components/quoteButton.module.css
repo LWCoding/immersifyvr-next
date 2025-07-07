@@ -1,5 +1,5 @@
 .quoteButton {
-  background-color: #3370ff;
+  background-color: var(--blue-color);
   color: white;
   padding: 0.6rem 1.3rem;
   border-radius: 999px;
@@ -9,5 +9,5 @@
 }
 
 .quoteButton:hover {
-  background-color: #2857cc;
+  background-color: var(--blue-hover-color);
 }
