@@ -32,14 +32,12 @@ export default function Contact() {
 							/>
 						</div>
 						<div>
-							<p>
-								Have a question about our services?
-								<br />
-								<br />
-								Use this quick-and-easy contact form and we'll
-								get back to you within a week.
-								<ContactForm />
-							</p>
+							Have a question about our services?
+							<br />
+							<br />
+							Use this quick-and-easy contact form and we'll
+							get back to you within a week.
+							<ContactForm />
 						</div>
 					</SideBySide>
 				</ContentBlock>

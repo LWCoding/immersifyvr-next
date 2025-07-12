@@ -73,6 +73,28 @@
   background-color: #2563eb;
 }
 
+.thankYouMessage {
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.reloadButton {
+  margin: 1.5rem 0;
+  padding: 0.5rem 1rem;
+  background-color: var(--blue-color);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.reloadButton:hover {
+  background-color: var(--blue-hover-color);
+}
+
 /* Responsive stacking on smaller screens */
 @media (max-width: 600px) {
   .fieldGroup {
