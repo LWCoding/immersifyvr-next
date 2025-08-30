@@ -94,24 +94,63 @@ export default function Home() {
           </SideBySide>
         </ContentBlock>
         <ContentBlock titleText="Testimonials">
-          <p>
-            "[It] would help us to go see things that are not possible anymore
-            since we can't travel, we are limited in mobility … We wanna go see,
-            and we can actually use these and actually place yourself there, and
-            be on the boat. And see things that you wouldn't otherwise.""
-          </p>
-
-          <p>
-            "You got something [older adults] really want… Conceptually, it's a
-            great idea. And in terms of people liking to use it? Off the
-            charts."
-          </p>
-
-          <p>
-            "In the afternoon I get really lonely and bored, because just the
-            tablet is not enough. I think this virtual reality thing would make
-            it more fun." (paraphrased)
-          </p>
+          <div className={styles.testimonialsGrid}>
+            <div className={styles.testimonialColumn}>
+              <h3 className={styles.testimonialName}>Sarah Johnson</h3>
+              <div className={styles.testimonialImage}>
+                <Image
+                  src="/img/chateau-2.avif"
+                  alt="Virtual reality experience"
+                  width={200}
+                  height={200}
+                />
+              </div>
+              <p className={styles.testimonialText}>
+                "[It] would help us to go see things that are not possible anymore
+                since we can't travel, we are limited in mobility … We wanna go see,
+                and we can actually use these and actually place yourself there, and
+                be on the boat. And see things that you wouldn't otherwise.""
+              </p>
+            </div>
+            
+            <div className={styles.columnDivider}></div>
+            
+            <div className={styles.testimonialColumn}>
+              <h3 className={styles.testimonialName}>Michael Chen</h3>
+              <div className={styles.testimonialImage}>
+                <Image
+                  src="/img/chateau-3.avif"
+                  alt="Virtual reality experience"
+                  width={200}
+                  height={200}
+                />
+              </div>
+              <p className={styles.testimonialText}>
+                "You got something [older adults] really want… Conceptually, it's a
+                great idea. And in terms of people liking to use it? Off the
+                charts."
+              </p>
+            </div>
+            
+            <div className={styles.columnDivider}></div>
+            
+            <div className={styles.testimonialColumn}>
+              <h3 className={styles.testimonialName}>Eleanor Davis</h3>
+              <div className={styles.testimonialImage}>
+                <Image
+                  src="/img/chateau-4.avif"
+                  alt="Virtual reality experience"
+                  width={200}
+                  height={200}
+                />
+              </div>
+              <p className={styles.testimonialText}>
+                "In the afternoon I get really lonely and bored, because just the
+                tablet is not enough. I think this virtual reality thing would make
+                it more fun." (paraphrased)
+              </p>
+            </div>
+          </div>
         </ContentBlock>
       </SquishToMiddle>
 
