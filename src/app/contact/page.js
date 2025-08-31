@@ -35,7 +35,7 @@ export default function Contact() {
 							Have a question about our services?
 							<br />
 							<br />
-							Use this quick-and-easy contact form and we'll
+							Use this quick-and-easy contact form and we&apos;ll
 							get back to you within a week.
 							<ContactForm />
 						</div>
