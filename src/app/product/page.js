@@ -6,6 +6,7 @@ import ImageHeader from "@/components/imageHeader";
 import ContentBlock from "@/components/contentBlock";
 import SideBySide from "@/components/sideBySide";
 import SquishToMiddle from "@/components/squishToMiddle";
+import ImageGallery from "@/components/imageGallery";
 
 export default function Product() {
   return (
@@ -52,6 +53,14 @@ export default function Product() {
         <ContentBlock titleText="Example Experiences">
           <SideBySide>
             <div>
+              <ImageGallery 
+                images={[
+                  "/img/beach-view.avif",
+                  "/img/chateau-3.avif",
+                  "/img/chateau-4.avif"
+                ]} 
+                altText="Virtual Swimming Experience" 
+              />
               <h2>Virtual Swimming</h2>
               <p>
                 Swim around in a virtual ocean environment and catch as many
@@ -60,10 +69,26 @@ export default function Product() {
               </p>
             </div>
             <div>
+              <ImageGallery 
+                images={[
+                  "/img/chateau-1.avif",
+                  "/img/chateau-5.avif",
+                  "/img/chateau-6.avif"
+                ]} 
+                altText="Spaceball Experience" 
+              />
               <h2>Spaceball</h2>
-              <p>TBD.</p>
+              <p>TBD</p>
             </div>
             <div>
+              <ImageGallery 
+                images={[
+                  "/img/chateau-2.avif",
+                  "/img/chateau-7.avif",
+                  "/img/presentation.avif"
+                ]} 
+                altText="Future Experience" 
+              />
               <h2>TBD</h2>
               <p>TBD</p>
             </div>
