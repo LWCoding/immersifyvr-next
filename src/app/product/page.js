@@ -15,40 +15,55 @@ export default function Product() {
       <ImageHeader title="Product" backgroundImage="/img/beach-view.avif" />
       <SquishToMiddle>
         <ContentBlock titleText="What We Offer">
-          <SideBySide>
-            <div>
-              <h2>Engaging Motivation</h2>
-              <p>
-                Our application also provides motivation to exercise through
-                entertaining VR activities like swimming to catch fish. Instead
-                of providing generalized and basic exercise, our application
-                combines physical activity into an engaging environment.
-              </p>
+          <div className={style.whatWeOfferContainer}>
+            <div className={style.offerRow}>
+              <div className={style.offerImage}>
+                <img src="/img/chateau-3.avif" alt="Engaging Motivation" />
+              </div>
+              <div className={style.offerText}>
+                <h2>Engaging Motivation</h2>
+                <p>
+                  Our application also provides motivation to exercise through
+                  entertaining VR activities like swimming to catch fish. Instead
+                  of providing generalized and basic exercise, our application
+                  combines physical activity into an engaging environment.
+                </p>
+              </div>
             </div>
-            <div>
-              <h2>Safe Exercise</h2>
-              <p>
-                Our innovation utilizes virtual reality to provide a stress and
-                danger-free environment for the elderly and disabled to overcome
-                daily limitations. Especially for seniors, going out to
-                exercise, for example, going to a swimming pool, can put them at
-                extreme risk of harm. However, virtual reality allows anyone to
-                immerse themselves in a realistic experience in any safe space
-                they choose.
-              </p>
+            <div className={style.offerRow}>
+              <div className={style.offerImage}>
+                <img src="/img/chateau-4.avif" alt="Safe Exercise" />
+              </div>
+              <div className={style.offerText}>
+                <h2>Safe Exercise</h2>
+                <p>
+                  Our innovation utilizes virtual reality to provide a stress and
+                  danger-free environment for the elderly and disabled to overcome
+                  daily limitations. Especially for seniors, going out to
+                  exercise, for example, going to a swimming pool, can put them at
+                  extreme risk of harm. However, virtual reality allows anyone to
+                  immerse themselves in a realistic experience in any safe space
+                  they choose.
+                </p>
+              </div>
             </div>
-            <div>
-              <h2>Immersive Technology</h2>
-              <p>
-                By utilizing Unity&apos;s XR Interaction Toolkit, we were able
-                to develop an experience with visually pleasing aesthetics and
-                intuitive controls, helping us reach our goal of making our
-                experience feel as simple and effective as possible. We are
-                constantly developing new engaging storylines and activities to
-                provide unique options of exercise for all.
-              </p>
+            <div className={style.offerRow}>
+              <div className={style.offerImage}>
+                <img src="/img/chateau-5.avif" alt="Immersive Technology" />
+              </div>
+              <div className={style.offerText}>
+                <h2>Immersive Technology</h2>
+                <p>
+                  By utilizing Unity&apos;s XR Interaction Toolkit, we were able
+                  to develop an experience with visually pleasing aesthetics and
+                  intuitive controls, helping us reach our goal of making our
+                  experience feel as simple and effective as possible. We are
+                  constantly developing new engaging storylines and activities to
+                  provide unique options of exercise for all.
+                </p>
+              </div>
             </div>
-          </SideBySide>
+          </div>
         </ContentBlock>
         <ContentBlock titleText="Example Experiences">
           <SideBySide>
