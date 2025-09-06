@@ -11,7 +11,6 @@ export default function ContentBlock({ titleText, children }) {
 					<Spacer size="small" />
 				</>
 			) : null}
-			<div className={styles.spacerSmall}></div>
 			{children}
 		</div>
 	);

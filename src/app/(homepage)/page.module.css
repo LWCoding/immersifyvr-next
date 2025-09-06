@@ -137,3 +137,56 @@
     height: 150px;
   }
 }
+
+/* Feature Card Styles */
+.featureCard {
+  background: rgba(51, 112, 255, 0.3);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid rgba(51, 112, 255, 0.5);
+  margin: 1rem 0;
+  height: 260px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.featureCard:hover {
+  background: rgba(51, 112, 255, 0.5);
+  border: 1px solid rgba(51, 112, 255, 0.7);
+}
+
+.featureCardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  padding-top: 0rem;
+}
+
+.featureCardHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featureIcon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.featureTitle {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.featureDescription {
+  margin: 0 0 auto 0;
+  line-height: 1.6;
+}

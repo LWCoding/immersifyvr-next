@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -10,7 +10,12 @@ import QuoteButton from "./quoteButton";
 
 export default function Header() {
 	const [menuOpen, setMenuOpen] = useState(false);
-	const pathname = usePathname();
+	const [pathname, setPathname] = useState("");
+	const currentPathname = usePathname();
+
+	useEffect(() => {
+		setPathname(currentPathname);
+	}, [currentPathname]);
 
 	return (
 		<nav className={styles.navbar}>
