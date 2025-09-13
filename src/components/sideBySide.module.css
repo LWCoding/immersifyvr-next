@@ -7,9 +7,9 @@
 }
 
 .sideBySide > * {
-  flex: 0 1 auto;
+  flex: 1 1 0;
   text-align: center;
-  max-width: 50%;
+  min-width: 0;
 }
 
 .sideBySide img {

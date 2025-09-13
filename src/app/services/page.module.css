@@ -1,0 +1,111 @@
+/* Services Grid Layout */
+.servicesGrid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3370ff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0.5rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .servicesGrid {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .arrow {
+    transform: rotate(90deg);
+    margin: 0.5rem 0;
+  }
+}
+
+/* Feature Card Styles */
+.featureCard {
+  background: rgba(51, 112, 255, 0.3);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid rgba(51, 112, 255, 0.5);
+  margin: 1rem 0;
+  height: 420px;
+  flex: 1;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.featureCard:hover {
+  background: rgba(51, 112, 255, 0.5);
+  border: 1px solid rgba(51, 112, 255, 0.7);
+}
+
+.featureCardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  padding-top: 0rem;
+}
+
+.featureCardHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featureIcon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.numberIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(51, 112, 255, 0.8);
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.featureTitle {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.featureDescription {
+  margin: 0 0 auto 0;
+  line-height: 1.6;
+  color: white;
+}
+
+.featureDescription ul {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.featureDescription li {
+  margin-bottom: 0.5rem;
+  color: white;
+}
