@@ -20,7 +20,22 @@ export default function OurTeam() {
 			<SquishToMiddle>
 				<ContentBlock titleText="Who We Are">
 					<SideBySide>
-						<div>
+						<div style={{ flex: '1', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+							<Image
+								className={styles.sideBySideImage}
+								src="/img/presentation.avif"
+								alt="A team member helping out an older adult"
+								width={600}
+								height={350}
+							/>
+						</div>
+						<div style={{ 
+							flex: '1',
+							textAlign: 'left', 
+							lineHeight: '1.6',
+							color: 'white',
+							padding: '0 2rem'
+						}}>
 							<p>
 								Our project idea along with the team stems from
 								our shared passion for virtual reality, game
@@ -29,15 +44,6 @@ export default function OurTeam() {
 								teenagers with grandparents who face the same
 								issues we work to solve with ImmersifyVR.
 							</p>
-						</div>
-						<div>
-							<Image
-								className={styles.sideBySideImage}
-								src="/img/presentation.avif"
-								alt="A team member helping out an older adult"
-								width={500}
-								height={350}
-							/>
 						</div>
 					</SideBySide>
 				</ContentBlock>
