@@ -19,7 +19,7 @@ export default function Header() {
 
 	return (
 		<nav className={styles.navbar}>
-			<div className={styles.logo}>
+			<Link href="/" className={styles.logo}>
 				<Image
 					src="/img/logo.avif"
 					width={80}
@@ -30,7 +30,7 @@ export default function Header() {
 					<h1>ImmersifyVR</h1>
 					<p>Virtual Reality for Seniors</p>
 				</div>
-			</div>
+			</Link>
 
 			{/* Hamburger icon */}
 			<button

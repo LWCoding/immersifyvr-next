@@ -9,6 +9,9 @@ const montserrat = Montserrat({
 export const metadata = {
   title: "ImmersifyVR",
   description: "Virtual reality exercise app for older adults",
+  icons: {
+    icon: "/img/logo.avif",
+  },
 };
 
 export default function RootLayout({ children }) {
