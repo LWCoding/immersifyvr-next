@@ -69,6 +69,22 @@
   }
 }
 
+.sideBySideImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .sideBySideImage {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 .testimonialsGrid {
   display: grid;
   grid-template-columns: 1fr auto 1fr auto 1fr;
@@ -155,7 +171,7 @@
   padding: 2rem;
   text-align: center;
   border: 1px solid rgba(51, 112, 255, 0.5);
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   height: 260px;
   width: 100%;
   display: flex;
@@ -199,4 +215,23 @@
 .featureDescription {
   margin: 0 0 auto 0;
   line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .featureCard {
+    margin: 0.75rem 0;
+    height: auto;
+    min-height: 200px;
+  }
+  
+  /* Add spacing between the two SideBySide components in mobile */
+  /* Target the second SideBySide component more specifically */
+  .sideBySide:nth-of-type(2) {
+    margin-top: 0.75rem !important;
+  }
+  
+  /* Alternative: target any SideBySide that comes after another SideBySide */
+  .sideBySide + .sideBySide {
+    margin-top: 0.75rem !important;
+  }
 }

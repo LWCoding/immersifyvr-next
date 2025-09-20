@@ -18,12 +18,22 @@
   border-radius: 20px;
 }
 
+/* Add spacing between consecutive SideBySide components (PC view) */
+.sideBySide + .sideBySide {
+  margin-top: 1.25rem;
+}
+
 @media (max-width: 768px) {
   .sideBySide {
     flex-direction: column;
   }
 
   .sideBySide > * {
-    margin: 1rem 0;
+    margin: 0;
+  }
+  
+  /* Add spacing between consecutive SideBySide components in mobile */
+  .sideBySide + .sideBySide {
+    margin-top: 1.75rem;
   }
 }
