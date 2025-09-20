@@ -223,15 +223,4 @@
     height: auto;
     min-height: 200px;
   }
-  
-  /* Add spacing between the two SideBySide components in mobile */
-  /* Target the second SideBySide component more specifically */
-  .sideBySide:nth-of-type(2) {
-    margin-top: 0.75rem !important;
-  }
-  
-  /* Alternative: target any SideBySide that comes after another SideBySide */
-  .sideBySide + .sideBySide {
-    margin-top: 0.75rem !important;
-  }
 }

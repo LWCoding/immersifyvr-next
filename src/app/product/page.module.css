@@ -52,9 +52,34 @@
   .offerRow {
     flex-direction: column;
     gap: 1rem;
+    height: auto;
+    margin-bottom: 2.5rem;
+  }
+  
+  .offerImage {
+    width: 100%;
+  }
+  
+  .offerImage img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
   }
   
   .offerText {
     text-align: center;
+    height: auto;
+    margin-top: 0;
+    width: 100%;
+  }
+  
+  .offerText h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .offerText p {
+    text-align: center;
+    max-width: 100%;
   }
 }
