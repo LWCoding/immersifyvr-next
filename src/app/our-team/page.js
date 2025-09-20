@@ -54,25 +54,25 @@ export default function OurTeam() {
 								src: "/img/jonny-headshot.avif",
 								alt: "Team Member 1",
 								name: "Jonny Tang",
-								role: "Art Director",
+								role: "Team Member",
 							},
 							{
 								src: "/img/jaeho-headshot.avif",
 								alt: "Team Member 2",
 								name: "Jaeho Lee",
-								role: "Tech Lead",
+								role: "Team Member",
 							},
 							{
 								src: "/img/lucas-headshot.avif",
 								alt: "Team Member 3",
 								name: "Lucas Wang",
-								role: "Project Manager",
+								role: "Business Coach",
 							},
 							{
 								src: "/img/andy-headshot.avif",
 								alt: "Team Member 4",
 								name: "Andy Liu",
-								role: "Product Designer",
+								role: "Technical Coach",
 							},
 						]}
 					/>

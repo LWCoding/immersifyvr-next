@@ -42,3 +42,17 @@
     grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
   }
 }
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center; /* Center the cards */
+  }
+  
+  .profileCard {
+    max-width: 280px; /* Limit card width on mobile */
+    width: 100%;
+  }
+}
