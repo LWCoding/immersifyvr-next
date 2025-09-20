@@ -142,6 +142,7 @@ export default function Home() {
           <div className={styles.testimonialsGrid}>
             <div className={styles.testimonialColumn}>
               <h3 className={styles.testimonialName}>Ms. Gloria</h3>
+              <h4 className={styles.testimonialRole}>Senior Tester</h4>
               <div className={styles.testimonialImage}>
                 <Image
                   src="/img/gloria.avif"
@@ -163,9 +164,10 @@ export default function Home() {
 
             <div className={styles.testimonialColumn}>
               <h3 className={styles.testimonialName}>Mr. Ed</h3>
+              <h4 className={styles.testimonialRole}>Mentor</h4>
               <div className={styles.testimonialImage}>
                 <Image
-                  src="/img/chateau-3.avif"
+                  src="/img/ed1.avif"
                   alt="Virtual reality experience"
                   width={200}
                   height={200}
@@ -181,10 +183,11 @@ export default function Home() {
             <div className={styles.columnDivider}></div>
 
             <div className={styles.testimonialColumn}>
-              <h3 className={styles.testimonialName}>Eleanor Davis</h3>
+              <h3 className={styles.testimonialName}>Bob</h3>
+              <h4 className={styles.testimonialRole}>Senior Tester</h4>
               <div className={styles.testimonialImage}>
                 <Image
-                  src="/img/chateau-4.avif"
+                  src="/img/bob.avif"
                   alt="Virtual reality experience"
                   width={200}
                   height={200}
