@@ -71,8 +71,9 @@ export default function Product() {
               <ImageGallery 
                 images={[
                   "/img/beach-view.avif",
-                  "/img/chateau-3.avif",
-                  "/img/chateau-4.avif"
+                  "/img/swimming-1.avif",
+                  "/img/swimming-2.avif",
+                  "/img/swimming-3.avif"
                 ]} 
                 altText="Virtual Swimming Experience" 
               />
@@ -86,14 +87,15 @@ export default function Product() {
             <div>
               <ImageGallery 
                 images={[
-                  "/img/chateau-1.avif",
-                  "/img/chateau-5.avif",
-                  "/img/chateau-6.avif"
+                  "/img/spaceball-1.avif",
+                  "/img/spaceball-2.avif"
                 ]} 
                 altText="Spaceball Experience" 
               />
               <h2>Spaceball</h2>
-              <p>TBD</p>
+              <p>
+                Play a tennis-like game in a virtual space environment! Users can expect a moderate intensity upper body workout.
+              </p>
             </div>
             <div>
               <ImageGallery 
