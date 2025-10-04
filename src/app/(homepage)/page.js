@@ -32,16 +32,33 @@ export default function Home() {
       <SquishToMiddle>
         <ContentBlock titleText="What We Do">
           <SideBySide>
-            <div>
-              <p>
-                <span className={styles.pEmphText}>1 in 3</span> older adults
-                suffer from a variety of health issues largely due to lack of
-                exercise.
-              </p>
-              <p>
-                ImmersifyVR is a virtual reality exercise simulator designed to
-                make exercising fun.
-              </p>
+            <div style={{ 
+              flex: '1',
+              textAlign: 'center', 
+              lineHeight: '1.8',
+              color: 'white',
+              padding: '4rem 3rem',
+              fontSize: '1.2rem',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              minHeight: '200px'
+            }}>
+              <div style={{ 
+                margin: 0,
+                maxWidth: '600px',
+                fontWeight: '400'
+              }}>
+                <p style={{ margin: '0 0 1.5rem 0' }}>
+                  <span className={styles.pEmphText}>1 in 3</span> older adults
+                  suffer from a variety of health issues largely due to lack of
+                  exercise.
+                </p>
+                <p style={{ margin: 0 }}>
+                  ImmersifyVR is a virtual reality exercise simulator designed to
+                  make exercising fun.
+                </p>
+              </div>
             </div>
             <div>
               <Image

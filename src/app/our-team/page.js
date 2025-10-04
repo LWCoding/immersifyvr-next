@@ -31,12 +31,21 @@ export default function OurTeam() {
 						</div>
 						<div style={{ 
 							flex: '1',
-							textAlign: 'left', 
-							lineHeight: '1.6',
+							textAlign: 'center', 
+							lineHeight: '1.8',
 							color: 'white',
-							padding: '0 2rem'
+							padding: '4rem 3rem',
+							fontSize: '1.2rem',
+							display: 'flex',
+							alignItems: 'center',
+							justifyContent: 'center',
+							minHeight: '400px'
 						}}>
-							<p>
+							<p style={{ 
+								margin: 0,
+								maxWidth: '600px',
+								fontWeight: '400'
+							}}>
 								Our project idea along with the team stems from
 								our shared passion for virtual reality, game
 								development, and improving the lives of the
