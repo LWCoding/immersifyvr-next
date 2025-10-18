@@ -25,18 +25,16 @@ export default function Product() {
 									<div className={styles.numberIcon}>
 										1
 									</div>
-									<h2 className={styles.featureTitle}>Training Sessions</h2>
+									<h2 className={styles.featureTitle}>Workshops at Retirement Homes</h2>
 								</div>
 								<div className={styles.featureDescription}>
 									<ul>
 										<li>
-											Recommended 3 in-person training sessions
-											minimum
+											Host promotional workshops at retirement homes
 										</li>
 										<li>Our team comes to you</li>
 										<li>
-											Work with seniors, nurses, and anyone
-											using/setting up our application
+											Demonstrate VR experiences to residents and staff
 										</li>
 									</ul>
 								</div>
@@ -49,17 +47,16 @@ export default function Product() {
 									<div className={styles.numberIcon}>
 										2
 									</div>
-									<h2 className={styles.featureTitle}>Rentals</h2>
+									<h2 className={styles.featureTitle}>Personal Trainer 1-1s</h2>
 								</div>
 								<div className={styles.featureDescription}>
 									<ul>
-										<li>Rentals of the Meta Quest 3 headset</li>
+										<li>One-on-one sessions with residents</li>
 										<li>
-											Accommodate for extensive number of virtual
-											reality headsets required
+											Personalized VR exercise experiences
 										</li>
 										<li>
-											Pre-downloaded with our application for free
+											Individual attention and support
 										</li>
 									</ul>
 								</div>
@@ -76,10 +73,9 @@ export default function Product() {
 								</div>
 								<div className={styles.featureDescription}>
 									<ul>
-										<li>Easy and efficient communication</li>
+										<li>Ongoing technical support</li>
 										<li>
-											Troubleshoot issues even after training
-											sessions
+											Troubleshoot issues and provide assistance
 										</li>
 									</ul>
 								</div>
