@@ -40,7 +40,7 @@ export default function QuoteForm() {
 					</button>
 				</div>
 			) : (
-				<form className={styles.form} onSubmit={handleSubmit}>
+				<form className={styles.formColumn} onSubmit={handleSubmit}>
 					<div className={styles.inputGroup}>
 						<label className={styles.formLabel} htmlFor="first-name">
 							First Name
@@ -76,6 +76,35 @@ export default function QuoteForm() {
 							name="email"
 							required
 						/>
+					</div>
+					<div className={styles.inputGroup}>
+						<label className={styles.formLabel} htmlFor="location">
+							Location
+						</label>
+						<input
+							className={styles.formInput}
+							type="text"
+							id="location"
+							name="location"
+							placeholder="City, State"
+						/>
+					</div>
+					<div className={styles.inputGroup}>
+						<label className={styles.formLabel} htmlFor="residents">
+							Estimated Number of Residents
+						</label>
+						<select
+							className={styles.formInput}
+							id="residents"
+							name="residents"
+						>
+							<option value="">Select range</option>
+							<option value="1-25">1-5 residents</option>
+							<option value="26-50">6-10 residents</option>
+							<option value="51-100">11-25 residents</option>
+							<option value="101-200">26-50 residents</option>
+							<option value="200+">50+ residents</option>
+						</select>
 					</div>
 					<button className={styles.submitForm} type="submit">
 						Get a Quote

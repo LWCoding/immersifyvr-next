@@ -9,6 +9,13 @@
   gap: 30px;
 }
 
+.formColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
 .formContainer {
   display: flex;
   justify-content: center;
@@ -37,7 +44,8 @@
   border-bottom: 1px solid #ccc;
   padding: 5px 0;
   color: white;
-  width: 200px;
+  width: 100%;
+  max-width: 300px;
 }
 
 .formInput:focus {

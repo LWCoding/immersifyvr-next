@@ -1,0 +1,93 @@
+.quoteContainer {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+.contactDetails {
+  flex: 1;
+  background-color: var(--accent-color);
+  border-radius: 16px;
+  padding: 2.5rem;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contactDetails h2 {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.contactIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.contactText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.contactLabel {
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  margin: 0;
+}
+
+.contactValue {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.formSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.formSection h2 {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .quoteContainer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .contactDetails {
+    padding: 2rem;
+  }
+  
+  .contactDetails h2,
+  .formSection h2 {
+    font-size: 1.5rem;
+  }
+}
