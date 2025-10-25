@@ -15,6 +15,11 @@ export default function ProfileGallery({ profiles }) {
           />
           <h3 className={styles.profileName}>{profile.name}</h3>
           <p className={styles.profileRole}>{profile.role}</p>
+          {profile.introduction && (
+            <div className={styles.introductionSection}>
+              <p className={styles.introductionText}>{profile.introduction}</p>
+            </div>
+          )}
         </div>
       ))}
     </div>

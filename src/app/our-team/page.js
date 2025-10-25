@@ -29,7 +29,7 @@ export default function OurTeam() {
 								height={350}
 							/>
 						</div>
-						<div style={{ 
+						<div style={{ 	
 							flex: '1',
 							textAlign: 'center', 
 							lineHeight: '1.8',
@@ -64,24 +64,28 @@ export default function OurTeam() {
 								alt: "Team Member 1",
 								name: "Jonny Tang",
 								role: "Team Member",
+								introduction: "(Placeholder) Hi, I'm Jonny and I enjoy game development. I handle the VR programming and user interface design for our team."
 							},
 							{
 								src: "/img/jaeho-headshot.avif",
 								alt: "Team Member 2",
 								name: "Jaeho Lee",
 								role: "Team Member",
+								introduction: "(Placeholder) Hi, I'm Jaeho and I love coding. I work on the backend systems and help make our VR experiences smooth and accessible."
 							},
 							{
 								src: "/img/lucas-headshot.avif",
 								alt: "Team Member 3",
 								name: "Lucas Wang",
 								role: "Business Coach",
+								introduction: "(Placeholder) Hi, I'm Lucas and I enjoy strategy games. I guide the business side of things and help plan our next moves."
 							},
 							{
 								src: "/img/andy-headshot.avif",
 								alt: "Team Member 4",
 								name: "Andy Liu",
 								role: "Technical Coach",
+								introduction: "(Placeholder) Hi, I'm Andy and I'm into VR development. I mentor the team on technical challenges and help debug our code."
 							},
 						]}
 					/>

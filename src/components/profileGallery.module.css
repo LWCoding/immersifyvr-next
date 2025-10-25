@@ -37,6 +37,20 @@
   font-size: 14px;
 }
 
+.introductionSection {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.introductionText {
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  text-align: left;
+}
+
 @media (max-width: 1024px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
