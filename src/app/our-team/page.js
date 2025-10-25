@@ -15,7 +15,7 @@ export default function OurTeam() {
 			<Navbar />
 			<ImageHeader
 				title="Our Team"
-				backgroundImage="/img/beach-view.avif"
+				backgroundImage="/img/beach-view.png"
 			/>
 			<SquishToMiddle>
 				<ContentBlock titleText="Who We Are">

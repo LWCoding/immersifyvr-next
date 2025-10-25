@@ -12,7 +12,7 @@ export default function Product() {
   return (
     <div>
       <Navbar />
-      <ImageHeader title="Product" backgroundImage="/img/beach-view.avif" />
+      <ImageHeader title="Product" backgroundImage="/img/beach-view.png" />
       <SquishToMiddle>
         <ContentBlock titleText="What We Offer">
           <div className={style.whatWeOfferContainer}>
@@ -70,7 +70,7 @@ export default function Product() {
             <div>
               <ImageGallery 
                 images={[
-                  "/img/beach-view.avif",
+                  "/img/beach-view.png",
                   "/img/swimming-1.avif",
                   "/img/swimming-2.avif",
                   "/img/swimming-3.avif"

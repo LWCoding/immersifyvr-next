@@ -16,7 +16,7 @@ export default function Contact() {
 			<Navbar />
 			<ImageHeader
 				title="Contact Us"
-				backgroundImage="/img/beach-view.avif"
+				backgroundImage="/img/beach-view.png"
 			/>
 			<SquishToMiddle>
 				<Spacer size="medium" />

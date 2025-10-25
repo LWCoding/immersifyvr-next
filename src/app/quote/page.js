@@ -12,7 +12,7 @@ export default function Quote() {
 			<Navbar />
 			<ImageHeader
 				title="Get a Quote"
-				backgroundImage="/img/beach-view.avif"
+				backgroundImage="/img/beach-view.png"
 			/>
 			<SquishToMiddle>
 				<Spacer size="medium" />

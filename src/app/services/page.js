@@ -14,7 +14,7 @@ export default function Product() {
 			<Navbar />
 			<ImageHeader
 				title="Our Service"
-				backgroundImage="/img/beach-view.avif"
+				backgroundImage="/img/beach-view.png"
 			/>
 			<SquishToMiddle>
 				<ContentBlock titleText="The Process">
