@@ -6,7 +6,7 @@ import ImageHeader from "@/components/imageHeader";
 import ContentBlock from "@/components/contentBlock";
 import SideBySide from "@/components/sideBySide";
 import SquishToMiddle from "@/components/squishToMiddle";
-import QuoteForm from "@/components/quoteForm";
+import QuoteButton from "@/components/quoteButton";
 
 export default function Product() {
 	return (
@@ -84,7 +84,9 @@ export default function Product() {
 					</div>
 				</ContentBlock>
 				<ContentBlock titleText="Start Now!">
-					<QuoteForm />
+					<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '2rem 0' }}>
+						<QuoteButton />
+					</div>
 				</ContentBlock>
 			</SquishToMiddle>
 			<Footer />
