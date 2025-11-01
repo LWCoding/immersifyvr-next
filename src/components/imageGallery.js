@@ -27,11 +27,21 @@ export default function ImageGallery({ images, altText }) {
       >
         ‹
       </button>
-      <img 
-        src={images[currentImageIndex]} 
-        alt={`${altText} - Image ${currentImageIndex + 1}`}
-        className={styles.image}
-      />
+      <div className={styles.sliderContainer}>
+        <div 
+          className={styles.slider}
+          style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
+        >
+          {images.map((image, index) => (
+            <img 
+              key={index}
+              src={image} 
+              alt={`${altText} - Image ${index + 1}`}
+              className={styles.image}
+            />
+          ))}
+        </div>
+      </div>
       <button 
         className={styles.arrow} 
         onClick={goToNext}
