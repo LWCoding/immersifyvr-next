@@ -13,7 +13,7 @@ export default function Footer() {
           </p>
           <p>
             LinkedIn:{" "}
-            <a href="https://www.linkedin.com/company/immersifyvr/">
+            <a target="_blank" href="https://www.linkedin.com/company/immersifyvr/">
               ImmersifyVR Team
             </a>
           </p>
