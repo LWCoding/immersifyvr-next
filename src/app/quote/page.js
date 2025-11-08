@@ -39,8 +39,8 @@ export default function Quote() {
 									</svg>
 								</div>
 								<div className={styles.contactText}>
-									<p className={styles.contactLabel}>Phone</p>
-									<p className={styles.contactValue}>(123) 456-7890</p>
+									<p className={styles.contactLabel}>LinkedIn</p>
+									<p className={styles.contactValue}>ImmersifyVR Team</p>
 								</div>
 							</div>
 							<div className={styles.contactItem}>
@@ -52,7 +52,7 @@ export default function Quote() {
 								</div>
 								<div className={styles.contactText}>
 									<p className={styles.contactLabel}>Location</p>
-									<p className={styles.contactValue}>Serving retirement communities nationwide</p>
+									<p className={styles.contactValue}>Bay Area and Los Angeles, CA</p>
 								</div>
 							</div>
 							<div className={styles.contactItem}>
