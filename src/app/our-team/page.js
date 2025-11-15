@@ -71,14 +71,14 @@ export default function OurTeam() {
 								alt: "Team Member 2",
 								name: "Jaeho Lee",
 								role: "Team Member",
-								introduction: "I’m a learning game developer and also enjoy music, golf, and running as a hobby. With the team, I work on various parts of the project, from the swimming algorithm to tutorials."
+								introduction: "I'm a learning game developer and also enjoy music, golf, and running as a hobby. With the team, I work on various parts of the project, from the swimming algorithm to tutorials."
 							},
 							{
 								src: "/img/lucas-headshot.avif",
 								alt: "Team Member 3",
 								name: "Lucas Wang",
 								role: "Business Coach",
-								introduction: "(Placeholder) Hi, I'm Lucas and I enjoy strategy games. I guide the business side of things and help plan our next moves."
+								introduction: "I'm a product and user experience designer who loves playing games. I guide the business side of things and help plan our next moves."
 							},
 							{
 								src: "/img/andy-headshot.avif",
