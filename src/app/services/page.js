@@ -47,7 +47,7 @@ export default function Product() {
 									<div className={styles.numberIcon}>
 										2
 									</div>
-									<h2 className={styles.featureTitle}>Personal Trainer 1-1s</h2>
+									<h2 className={styles.featureTitle}>Personal Trainer One-on-Ones</h2>
 								</div>
 								<div className={styles.featureDescription}>
 									<ul>
@@ -83,11 +83,16 @@ export default function Product() {
 						</div>
 					</div>
 				</ContentBlock>
-				<ContentBlock titleText="Start Now!">
-					<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '2rem 0' }}>
-						<QuoteButton />
+				<div className={styles.quoteSection}>
+					<div className={styles.quoteBackground}>
+						<div className={styles.quoteOverlay}>
+							<div className={styles.quoteContent}>
+								<h2 className={styles.quoteHeader}>Ready to start?</h2>
+								<QuoteButton />
+							</div>
+						</div>
 					</div>
-				</ContentBlock>
+				</div>
 			</SquishToMiddle>
 			<Footer />
 		</div>
