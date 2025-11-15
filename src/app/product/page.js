@@ -79,9 +79,7 @@ export default function Product() {
               />
               <h2>Virtual Swimming</h2>
               <p>
-                Swim around in a virtual ocean environment and catch as many
-                fish as you can! Users can expect a low-moderate intensity upper
-                body workout.
+                Swim around in a virtual ocean environment and catch as many fish as you can! Users can expect a low-moderate intensity upper body workout.
               </p>
             </div>
             <div>
@@ -104,10 +102,10 @@ export default function Product() {
                   "/img/chateau-7.avif",
                   "/img/presentation.avif"
                 ]} 
-                altText="Future Experience" 
+                altText="Biking Experience" 
               />
-              <h2>TBD</h2>
-              <p>TBD</p>
+              <h2>Biking</h2>
+              <p>Bike through a virtual forest or a bustling city! Users can expect a low intensity upper body workout.</p>
             </div>
           </SideBySide>
         </ContentBlock>

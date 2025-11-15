@@ -64,7 +64,7 @@ export default function OurTeam() {
 								alt: "Team Member 1",
 								name: "Jonny Tang",
 								role: "Team Member",
-								introduction: "(Placeholder) Hi, I'm Jonny and I enjoy game development. I handle the VR programming and user interface design for our team."
+								introduction: "Hi, I'm Jonny and I love coding, art, and helping others. I handle the VR and website development and UI design for our team."
 							},
 							{
 								src: "/img/jaeho-headshot.avif",
