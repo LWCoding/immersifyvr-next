@@ -23,7 +23,7 @@ export default function Product() {
               <div className={style.offerText}>
                 <h2>Engaging Motivation</h2>
                 <p>
-                  Our application also provides motivation to exercise through
+                  We provide motivation to exercise through
                   entertaining VR activities like swimming to catch fish. Instead
                   of providing generalized and basic exercise, our application
                   combines physical activity into an engaging environment.
@@ -37,11 +37,9 @@ export default function Product() {
               <div className={style.offerText}>
                 <h2>Safe Exercise</h2>
                 <p>
-                  Our innovation utilizes virtual reality to provide a stress and
+                  We utilize virtual reality to provide a stress and
                   danger-free environment for the elderly and disabled to overcome
-                  daily limitations. Especially for seniors, going out to
-                  exercise, for example, going to a swimming pool, can put them at
-                  extreme risk of harm. However, virtual reality allows anyone to
+                  daily limitations. Virtual reality allows anyone to
                   immerse themselves in a realistic experience in any safe space
                   they choose.
                 </p>
@@ -54,12 +52,11 @@ export default function Product() {
               <div className={style.offerText}>
                 <h2>Immersive Technology</h2>
                 <p>
-                  By utilizing Unity&apos;s XR Interaction Toolkit, we were able
-                  to develop an experience with visually pleasing aesthetics and
-                  intuitive controls, helping us reach our goal of making our
+                  We use Unity&apos;s XR Interaction Toolkit to create an experience 
+                  with visually pleasing aesthetics and
+                  intuitive controls, making our
                   experience feel as simple and effective as possible. We are
-                  constantly developing new engaging storylines and activities to
-                  provide unique options of exercise for all.
+                  constantly creating new activities based on user feedback.
                 </p>
               </div>
             </div>
