@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -10,12 +10,7 @@ import QuoteButton from "./quoteButton";
 
 export default function Header() {
 	const [menuOpen, setMenuOpen] = useState(false);
-	const [pathname, setPathname] = useState("");
-	const currentPathname = usePathname();
-
-	useEffect(() => {
-		setPathname(currentPathname);
-	}, [currentPathname]);
+	const pathname = usePathname();
 
 	return (
 		<nav className={styles.navbar}>
@@ -60,7 +55,7 @@ export default function Header() {
 					<Link
 						href="/product"
 						className={
-							pathname.startsWith("/product") ? styles.active : ""
+							pathname?.startsWith("/product") ? styles.active : ""
 						}
 					>
 						Product
@@ -70,7 +65,7 @@ export default function Header() {
 					<Link
 						href="/services"
 						className={
-							pathname.startsWith("/services")
+							pathname?.startsWith("/services")
 								? styles.active
 								: ""
 						}
@@ -82,7 +77,7 @@ export default function Header() {
 					<Link
 						href="/our-team"
 						className={
-							pathname.startsWith("/our-team")
+							pathname?.startsWith("/our-team")
 								? styles.active
 								: ""
 						}
@@ -94,7 +89,7 @@ export default function Header() {
 					<Link
 						href="/contact"
 						className={
-							pathname.startsWith("/contact") ? styles.active : ""
+							pathname?.startsWith("/contact") ? styles.active : ""
 						}
 					>
 						Contact
