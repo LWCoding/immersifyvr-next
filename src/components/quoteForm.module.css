@@ -53,6 +53,16 @@
   border-bottom: 1px solid #4a90e2;
 }
 
+.formInput option {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.formInput option:hover {
+  background-color: #4a90e2;
+  color: white;
+}
+
 .submitForm {
   background-color: #3b82f6;
   color: white;
