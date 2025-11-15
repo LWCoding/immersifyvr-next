@@ -108,7 +108,7 @@ export default function Product() {
         <ContentBlock titleText="Video Demo">
           <iframe
             className={style.videoDemo}
-            src="https://www.youtube.com/embed/2TfVHTgI-lI?si=KEjEDv7ccGpYr-Zx"
+            src="https://www.youtube.com/embed/Ayzf8Rt9lu8?si=FTobvLvP9wEoCXDF"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
