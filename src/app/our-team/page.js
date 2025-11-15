@@ -71,7 +71,7 @@ export default function OurTeam() {
 								alt: "Team Member 2",
 								name: "Jaeho Lee",
 								role: "Team Member",
-								introduction: "(Placeholder) Hi, I'm Jaeho and I love coding. I work on the backend systems and help make our VR experiences smooth and accessible."
+								introduction: "I’m a learning game developer and also enjoy music, golf, and running as a hobby. With the team, I work on various parts of the project, from the swimming algorithm to tutorials."
 							},
 							{
 								src: "/img/lucas-headshot.avif",
