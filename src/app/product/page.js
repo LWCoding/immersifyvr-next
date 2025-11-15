@@ -98,14 +98,13 @@ export default function Product() {
             <div>
               <ImageGallery 
                 images={[
-                  "/img/chateau-2.avif",
-                  "/img/chateau-7.avif",
-                  "/img/presentation.avif"
+                  "/img/rock-climbing.png"
                 ]} 
-                altText="Biking Experience" 
+                altText="Rock Climbing Experience" 
               />
-              <h2>Biking</h2>
-              <p>Bike through a virtual forest or a bustling city! Users can expect a low intensity upper body workout.</p>
+              <h2>Rock Climbing</h2>
+              <p style={{ fontSize: '0.9em', fontStyle: 'italic', color: '#888', marginTop: '-0.8rem', marginBottom: '0.5rem' }}>(Work in Progress)</p>
+              <p>Explore a new and exciting world, one rock at a time. A low intensity workout that allows users to climb at their own pace.</p>
             </div>
           </SideBySide>
         </ContentBlock>
