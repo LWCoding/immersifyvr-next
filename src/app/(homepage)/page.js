@@ -71,7 +71,7 @@ export default function Home() {
             </div>
           </SideBySide>
         </ContentBlock>
-        <ContentBlock titleText="Why ImmersifyVR?">
+        <ContentBlock titleText="Our Core Pillars">
           <SideBySide>
             <div className={styles.featureCard}>
               <div className={styles.featureCardContent}>
@@ -180,8 +180,8 @@ export default function Home() {
             <div className={styles.columnDivider}></div>
 
             <div className={styles.testimonialColumn}>
-              <h3 className={styles.testimonialName}>Mr. Ed</h3>
-              <h4 className={styles.testimonialRole}>Mentor</h4>
+              <h3 className={styles.testimonialName}>Ed Loeswick</h3>
+              <h4 className={styles.testimonialRole}>Personal Trainer</h4>
               <div className={styles.testimonialImage}>
                 <Image
                   src="/img/ed1.avif"
@@ -200,7 +200,7 @@ export default function Home() {
             <div className={styles.columnDivider}></div>
 
             <div className={styles.testimonialColumn}>
-              <h3 className={styles.testimonialName}>Bob</h3>
+              <h3 className={styles.testimonialName}>Bob (Chateau Cupertino)</h3>
               <h4 className={styles.testimonialRole}>Senior Tester</h4>
               <div className={styles.testimonialImage}>
                 <Image
