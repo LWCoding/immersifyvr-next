@@ -85,7 +85,7 @@ export default function OurTeam() {
 								alt: "Team Member 4",
 								name: "Andy Liu",
 								role: "Technical Coach",
-								introduction: "(Placeholder) Hi, I'm Andy and I'm into VR development. I mentor the team on technical challenges and help debug our code."
+								introduction: "Hi, I'm Andy and I'm into VR development. I mentor the team on technical challenges and help debug our code."
 							},
 						]}
 					/>
