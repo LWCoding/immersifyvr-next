@@ -53,6 +53,16 @@
   border-bottom: 1px solid #4a90e2;
 }
 
+.inputError {
+  border-bottom-color: #f87171;
+}
+
+.fieldError {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #f87171;
+}
+
 .formInput option {
   background-color: #1a1a1a;
   color: white;
