@@ -4,6 +4,7 @@ import Spacer from "./spacer";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
+      <div className={styles.footerInner}>
       <div className={styles.footerContainer}>
         <div className={styles.footerColumn}>
           <h3>Contact</h3>
@@ -69,6 +70,7 @@ export default function Footer() {
       </div>
       <div className={styles.footerBottom}>
         <p>&copy; 2035 by ImmersifyVR.</p>
+      </div>
       </div>
     </footer>
   );

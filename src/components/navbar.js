@@ -14,6 +14,7 @@ export default function Header() {
 
 	return (
 		<nav className={styles.navbar}>
+			<div className={styles.navbarInner}>
 			<Link href="/" className={styles.logo}>
 				<Image
 					src="/img/logo.avif"
@@ -97,6 +98,7 @@ export default function Header() {
 				</li>
 				<QuoteButton />
 			</ul>
+			</div>
 		</nav>
 	);
 }

@@ -16,6 +16,7 @@ export default function Home() {
       <Navbar />
 
       <div className={styles.hero}>
+        <div className={styles.heroInner}>
         <div className={styles.heroContent}>
           <h2>
             Welcome to <span>ImmersifyVR</span>
@@ -26,6 +27,7 @@ export default function Home() {
             .
           </p>
           <QuoteButton />
+        </div>
         </div>
       </div>
 

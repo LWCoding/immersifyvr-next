@@ -64,7 +64,7 @@ export default function Product() {
         </ContentBlock>
         <ContentBlock titleText="Example Experiences">
           <SideBySide>
-            <div>
+            <div className={style.exampleExperienceColumn}>
               <ImageGallery 
                 images={[
                   "/img/beach-view.png",
@@ -79,7 +79,7 @@ export default function Product() {
                 Swim around in a virtual ocean environment and catch as many fish as you can! Users can expect a low-moderate intensity upper body workout.
               </p>
             </div>
-            <div>
+            <div className={style.exampleExperienceColumn}>
               <ImageGallery 
                 images={[
                   "/img/spaceball-1.avif",
@@ -92,7 +92,7 @@ export default function Product() {
                 Play a tennis-like game in a virtual space environment! Users can expect a moderate intensity upper body workout.
               </p>
             </div>
-            <div>
+            <div className={style.exampleExperienceColumn}>
               <ImageGallery 
                 images={[
                   "/img/rock-climbing.png"

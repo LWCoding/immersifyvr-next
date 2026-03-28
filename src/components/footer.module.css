@@ -5,6 +5,13 @@
   margin-top: 2rem;
 }
 
+.footerInner {
+  max-width: var(--site-max-width);
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .footerContainer {
   display: flex;
   flex-wrap: wrap;

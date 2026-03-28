@@ -1,7 +1,7 @@
 .squishToMiddle {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
+  max-width: var(--site-max-width);
   height: 100%;
   margin: 0 auto;
   padding: 0;

@@ -4,9 +4,20 @@
   min-height: 95vh;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding: 0 2rem;
+  justify-content: center;
+  padding: 0;
   mask-image: linear-gradient(to bottom, black 0%, black 80%, transparent 100%);
+}
+
+.heroInner {
+  max-width: var(--site-max-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .heroContent {
@@ -42,9 +53,13 @@
 @media (max-width: 768px) {
   .hero {
     min-height: 70vh;
-    padding: 0 1rem;
     justify-content: center;
     text-align: center;
+  }
+
+  .heroInner {
+    padding: 0 1rem;
+    justify-content: center;
   }
 
   .heroContent {

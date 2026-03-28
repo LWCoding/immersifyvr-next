@@ -6,6 +6,7 @@
   --accent-color: #060b12; /* Accent color for cards and sections */
   --navbar-color: #060b12; /* Navbar background color */
   --footer-color: #060b12; /* Footer background color */
+  --site-max-width: 1200px; /* Navbar, footer, hero, main content column */
 }
 
 * {

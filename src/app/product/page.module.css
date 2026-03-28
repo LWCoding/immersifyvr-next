@@ -48,6 +48,10 @@
   color: white;
 }
 
+.exampleExperienceColumn p {
+  line-height: 1.6;
+}
+
 @media (max-width: 768px) {
   .offerRow {
     flex-direction: column;
