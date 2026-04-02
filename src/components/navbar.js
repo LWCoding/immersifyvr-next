@@ -54,19 +54,10 @@ export default function Header() {
 				</li>
 				<li>
 					<Link
-						href="/product"
-						className={
-							pathname?.startsWith("/product") ? styles.active : ""
-						}
-					>
-						Product
-					</Link>
-				</li>
-				<li>
-					<Link
 						href="/services"
 						className={
-							pathname?.startsWith("/services")
+							pathname?.startsWith("/services") ||
+							pathname?.startsWith("/product")
 								? styles.active
 								: ""
 						}

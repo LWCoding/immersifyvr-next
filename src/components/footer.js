@@ -28,11 +28,6 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a target="_blank" href="/product">
-                Product
-              </a>
-            </li>
-            <li>
               <a target="_blank" href="/services">
                 Services
               </a>
