@@ -87,9 +87,11 @@ export default function Home() {
                   <h2 className={styles.featureTitle}>Engaging Storylines</h2>
                 </div>
                 <p className={styles.featureDescription}>
-                  Our VR experiences are built around engaging narratives that
-                  captivate users, making exercise feel like an adventure rather
-                  than a chore.
+                Our VR experiences are story-driven, empowering users
+                to become the protagonists of captivating adventures.
+                By placing them at the center of immersive, interactive worlds,
+                ImmersifyVR transforms exercise into a meaningful experience
+                that feels exciting.
                 </p>
               </div>
             </div>
