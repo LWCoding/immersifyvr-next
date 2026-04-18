@@ -9,6 +9,7 @@ import SideBySide from "@/components/sideBySide";
 import ProfileGallery from "@/components/profileGallery";
 import ContactForm from "@/components/contactForm";
 import SectionBand from "@/components/sectionBand";
+import Spacer from "@/components/spacer";
 
 export default function OurTeam() {
   return (
@@ -128,6 +129,7 @@ export default function OurTeam() {
               <br />
               Use this quick-and-easy contact form and we&apos;ll get back to
               you within a week.
+              <Spacer size="small" />
               <ContactForm />
             </div>
           </SideBySide>
