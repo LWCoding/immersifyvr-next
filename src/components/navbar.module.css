@@ -4,6 +4,10 @@
   position: sticky;
   top: 0;
   z-index: 1000;
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid var(--border-subtle);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
 }
 
 .navbarInner {
@@ -45,7 +49,7 @@
 .brandText p {
   font-size: 0.75rem;
   margin: 0;
-  color: #cccccc;
+  color: var(--text-muted);
 }
 
 /* Hamburger Button */
@@ -64,7 +68,7 @@
 .bar {
   height: 3px;
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: var(--text-color);
   border-radius: 2px;
 }
 
@@ -80,7 +84,7 @@
 
 .navLinks li a {
   text-decoration: none;
-  color: #f0f0f0;
+  color: var(--text-color);
   transition: color 0.2s ease;
 }
 
@@ -104,7 +108,10 @@
     width: 200px;
     padding: 1rem;
     display: none;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    margin-top: 0.5rem;
     z-index: 1000;
   }
 

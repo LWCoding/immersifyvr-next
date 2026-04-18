@@ -3,6 +3,7 @@
   color: var(--text-color);
   padding: 2rem;
   margin-top: 2rem;
+  border-top: 1px solid var(--border-subtle);
 }
 
 .footerInner {
@@ -28,7 +29,7 @@
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: 1rem;
-  color: #fff;
+  color: var(--text-color);
 }
 
 .footerColumn p,
@@ -45,7 +46,7 @@
 
 .footerColumn a {
   text-decoration: none;
-  color: #ccc;
+  color: var(--text-muted);
   transition: color 0.2s ease;
 }
 
@@ -57,11 +58,11 @@
   text-align: center;
   margin-top: 2rem;
   font-size: 0.8rem;
-  color: #888;
+  color: var(--text-muted);
 }
 
 .footerBottom a {
-  color: #888;
+  color: var(--text-muted);
   text-decoration: none;
 }
 

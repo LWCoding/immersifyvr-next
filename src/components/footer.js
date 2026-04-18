@@ -34,12 +34,7 @@ export default function Footer() {
             </li>
             <li>
               <a target="_blank" href="/our-team">
-                Our Team
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href="/contact">
-                Contact
+                About Us
               </a>
             </li>
             <li>

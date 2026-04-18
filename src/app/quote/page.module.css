@@ -10,15 +10,16 @@
   background-color: var(--accent-color);
   border-radius: 16px;
   padding: 2.5rem;
-  color: white;
+  color: var(--text-color);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border-subtle);
 }
 
 .contactDetails h2 {
   margin: 0 0 1.5rem 0;
   font-size: 1.8rem;
   font-weight: 600;
-  color: white;
+  color: var(--text-color);
 }
 
 .contactInfo {
@@ -52,13 +53,13 @@
 .contactLabel {
   font-weight: 600;
   font-size: 1rem;
-  color: white;
+  color: var(--text-color);
   margin: 0;
 }
 
 .contactValue {
   font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--text-muted);
   margin: 0;
   line-height: 1.4;
 }
@@ -73,7 +74,7 @@
   margin: 0 0 1.5rem 0;
   font-size: 1.8rem;
   font-weight: 600;
-  color: white;
+  color: var(--text-color);
 }
 
 @media (max-width: 768px) {

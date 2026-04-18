@@ -17,48 +17,63 @@ export default function Home() {
 
       <div className={styles.hero}>
         <div className={styles.heroInner}>
-        <div className={styles.heroContent}>
-          <h2>
-            Welcome to <span>ImmersifyVR</span>
-          </h2>
-          <p>
-            We offer <strong>story-driven experiences</strong> that empower the
-            elderly or the disabled to become <strong>physically active</strong>
-            .
-          </p>
-          <QuoteButton />
-        </div>
+          <div className={styles.heroContent}>
+            <h2>
+              Welcome to <span>ImmersifyVR</span>
+            </h2>
+            <p>
+              We offer <strong>story-driven experiences</strong> that empower
+              the elderly or the disabled to become{" "}
+              <strong>physically active</strong>.
+            </p>
+            <QuoteButton />
+          </div>
+          <div className={styles.heroImageWrap}>
+            <Image
+              src="/img/chateau-playtester.png"
+              alt="Team member guiding a senior using a VR headset"
+              width={600}
+              height={900}
+              className={styles.heroImage}
+              priority
+            />
+          </div>
         </div>
       </div>
 
-      <SquishToMiddle>
+      <section className={styles.homeSection}>
+        <SquishToMiddle>
         <ContentBlock titleText="What We Do">
           <SideBySide>
-            <div style={{ 
-              flex: '1',
-              textAlign: 'center', 
-              lineHeight: '1.8',
-              color: 'white',
-              padding: '4rem 3rem',
-              fontSize: '1.2rem',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              minHeight: '200px'
-            }}>
-              <div style={{ 
-                margin: 0,
-                maxWidth: '600px',
-                fontWeight: '400'
-              }}>
-                <p style={{ margin: '0 0 1.5rem 0' }}>
+            <div
+              style={{
+                flex: "1",
+                textAlign: "center",
+                lineHeight: "1.8",
+                color: "var(--text-color)",
+                padding: "4rem 3rem",
+                fontSize: "1.2rem",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                minHeight: "200px",
+              }}
+            >
+              <div
+                style={{
+                  margin: 0,
+                  maxWidth: "600px",
+                  fontWeight: "400",
+                }}
+              >
+                <p style={{ margin: "0 0 1.5rem 0" }}>
                   <span className={styles.pEmphText}>1 in 3</span> older adults
                   suffer from a variety of health issues largely due to lack of
                   exercise.
                 </p>
                 <p style={{ margin: 0 }}>
-                  ImmersifyVR is a virtual reality exercise simulator designed to
-                  make exercising fun.
+                  ImmersifyVR is a virtual reality exercise simulator designed
+                  to make exercising fun.
                 </p>
               </div>
             </div>
@@ -73,13 +88,26 @@ export default function Home() {
             </div>
           </SideBySide>
         </ContentBlock>
+        </SquishToMiddle>
+      </section>
+      <section className={`${styles.homeSection} ${styles.homeSectionAlt}`}>
+        <SquishToMiddle>
         <ContentBlock titleText="Our Core Pillars">
           <SideBySide>
             <div className={styles.featureCard}>
               <div className={styles.featureCardContent}>
                 <div className={styles.featureCardHeader}>
                   <div className={styles.featureIcon}>
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--blue-color)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="var(--blue-color)"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
                       <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
                       <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
                     </svg>
@@ -87,11 +115,11 @@ export default function Home() {
                   <h2 className={styles.featureTitle}>Engaging Storylines</h2>
                 </div>
                 <p className={styles.featureDescription}>
-                Our VR experiences are story-driven, empowering users
-                to become the protagonists of captivating adventures.
-                By placing them at the center of immersive, interactive worlds,
-                ImmersifyVR transforms exercise into a meaningful experience
-                that feels exciting.
+                  Our VR experiences are story-driven, empowering users to
+                  become the protagonists of captivating adventures. By placing
+                  them at the center of immersive, interactive worlds,
+                  ImmersifyVR transforms exercise into a meaningful experience
+                  that feels exciting.
                 </p>
               </div>
             </div>
@@ -99,7 +127,16 @@ export default function Home() {
               <div className={styles.featureCardContent}>
                 <div className={styles.featureCardHeader}>
                   <div className={styles.featureIcon}>
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--blue-color)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="var(--blue-color)"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
                       <circle cx="12" cy="12" r="10"></circle>
                       <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                       <path d="M12 17h.01"></path>
@@ -110,8 +147,8 @@ export default function Home() {
                 <p className={styles.featureDescription}>
                   ImmersifyVR addresses these health challenges by turning
                   exercise into an enjoyable and immersive experience for older
-                  adults. We offer a virtual reality exercise simulator with many
-                  immersive experiences that range in intensity.
+                  adults. We offer a virtual reality exercise simulator with
+                  many immersive experiences that range in intensity.
                 </p>
               </div>
             </div>
@@ -121,7 +158,16 @@ export default function Home() {
               <div className={styles.featureCardContent}>
                 <div className={styles.featureCardHeader}>
                   <div className={styles.featureIcon}>
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--blue-color)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="var(--blue-color)"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
                       <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
                       <path d="M21 3v5h-5"></path>
                       <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
@@ -133,8 +179,8 @@ export default function Home() {
                 <p className={styles.featureDescription}>
                   ImmersifyVR addresses these health challenges by turning
                   exercise into an enjoyable and immersive experience for older
-                  adults. We offer a virtual reality exercise simulator with many
-                  immersive experiences that range in intensity.
+                  adults. We offer a virtual reality exercise simulator with
+                  many immersive experiences that range in intensity.
                 </p>
               </div>
             </div>
@@ -142,7 +188,16 @@ export default function Home() {
               <div className={styles.featureCardContent}>
                 <div className={styles.featureCardHeader}>
                   <div className={styles.featureIcon}>
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--blue-color)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="var(--blue-color)"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
                       <line x1="12" y1="1" x2="12" y2="23"></line>
                       <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                     </svg>
@@ -150,16 +205,20 @@ export default function Home() {
                   <h2 className={styles.featureTitle}>Staying Active</h2>
                 </div>
                 <p className={styles.featureDescription}>
-                  ImmersifyVR provides a variety of activities designed to
-                  keep users active and engaged. Our activities encourage users to 
-                  interact with virtual environments. Our activities are designed
-                  to keep users active without the monotony and potential hazard 
-                  of traditional exercise.
+                  ImmersifyVR provides a variety of activities designed to keep
+                  users active and engaged. Our activities encourage users to
+                  interact with virtual environments. Our activities are
+                  designed to keep users active without the monotony and
+                  potential hazard of traditional exercise.
                 </p>
               </div>
             </div>
           </SideBySide>
         </ContentBlock>
+        </SquishToMiddle>
+      </section>
+      <section className={styles.homeSection}>
+        <SquishToMiddle>
         <ContentBlock titleText="Testimonials">
           <div className={styles.testimonialsGrid}>
             <div className={styles.testimonialColumn}>
@@ -169,8 +228,8 @@ export default function Home() {
                 <Image
                   src="/img/gloria.avif"
                   alt="Virtual reality experience"
-                  width={200}
-                  height={200}
+                  width={240}
+                  height={240}
                 />
               </div>
               <p className={styles.testimonialText}>
@@ -191,8 +250,8 @@ export default function Home() {
                 <Image
                   src="/img/ed1.avif"
                   alt="Virtual reality experience"
-                  width={200}
-                  height={200}
+                  width={240}
+                  height={240}
                 />
               </div>
               <p className={styles.testimonialText}>
@@ -205,14 +264,16 @@ export default function Home() {
             <div className={styles.columnDivider}></div>
 
             <div className={styles.testimonialColumn}>
-              <h3 className={styles.testimonialName}>Bob (Chateau Cupertino)</h3>
+              <h3 className={styles.testimonialName}>
+                Bob (Chateau Cupertino)
+              </h3>
               <h4 className={styles.testimonialRole}>Senior Tester</h4>
               <div className={styles.testimonialImage}>
                 <Image
                   src="/img/bob.avif"
                   alt="Virtual reality experience"
-                  width={200}
-                  height={200}
+                  width={240}
+                  height={240}
                 />
               </div>
               <p className={styles.testimonialText}>
@@ -223,7 +284,8 @@ export default function Home() {
             </div>
           </div>
         </ContentBlock>
-      </SquishToMiddle>
+        </SquishToMiddle>
+      </section>
 
       <Footer />
     </div>

@@ -74,17 +74,7 @@ export default function Header() {
 								: ""
 						}
 					>
-						Our Team
-					</Link>
-				</li>
-				<li>
-					<Link
-						href="/contact"
-						className={
-							pathname?.startsWith("/contact") ? styles.active : ""
-						}
-					>
-						Contact
+						About Us
 					</Link>
 				</li>
 				<QuoteButton />

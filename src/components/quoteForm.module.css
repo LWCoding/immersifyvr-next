@@ -31,26 +31,27 @@
 .formLabel {
   margin-bottom: 8px;
   font-size: 14px;
+  color: var(--text-color);
 }
 
 .required {
-  color: #ccc;
+  color: var(--text-muted);
   font-weight: normal;
 }
 
 .formInput {
   background: none;
   border: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--border-subtle);
   padding: 5px 0;
-  color: white;
+  color: var(--text-color);
   width: 100%;
   max-width: 400px;
 }
 
 .formInput:focus {
   outline: none;
-  border-bottom: 1px solid #4a90e2;
+  border-bottom: 1px solid var(--blue-color);
 }
 
 .inputError {
@@ -64,18 +65,18 @@
 }
 
 .formInput option {
-  background-color: #1a1a1a;
-  color: white;
+  background-color: var(--surface);
+  color: var(--text-color);
 }
 
 .formInput option:hover {
-  background-color: #4a90e2;
-  color: white;
+  background-color: var(--accent-color);
+  color: var(--text-color);
 }
 
 .submitForm {
-  background-color: #3b82f6;
-  color: white;
+  background-color: var(--blue-color);
+  color: #ffffff;
   border: none;
   border-radius: 999px;
   padding: 10px 20px;
@@ -86,14 +87,15 @@
 }
 
 .submitForm:hover {
-  background-color: #2563eb;
+  background-color: var(--blue-hover-color);
 }
 
 .thankYouMessage {
   text-align: center;
-  color: white;
+  color: var(--text-color);
   padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--accent-color);
+  border-radius: 12px;
 }
 
 .reloadButton {
@@ -101,7 +103,7 @@
   padding: 0.5rem 1rem;
   background-color: var(--blue-color);
   border: none;
-  color: white;
+  color: #ffffff;
   font-size: 1rem;
   border-radius: 9999px;
   cursor: pointer;

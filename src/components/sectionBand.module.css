@@ -1,0 +1,17 @@
+.band {
+  width: 100%;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 3rem 0;
+}
+
+.alt {
+  background-color: var(--band-alt);
+}
+
+@media (max-width: 768px) {
+  .band {
+    padding: 2.25rem 0;
+  }
+}
+

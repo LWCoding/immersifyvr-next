@@ -3,10 +3,12 @@
   justify-content: center;
   align-items: center;
   padding: 40px;
-  background-color: #1d202a;
+  background-color: var(--surface);
   border-radius: 12px;
   max-width: 900px;
   margin: 0 auto;
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.06);
 }
 
 .form {
@@ -35,27 +37,27 @@
 .formLabel {
   margin-bottom: 8px;
   font-size: 14px;
-  color: white;
+  color: var(--text-color);
 }
 
 .required {
-  color: #ccc;
+  color: var(--text-muted);
   font-weight: normal;
 }
 
 .formInput {
   background: none;
   border: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--border-subtle);
   padding: 8px 0;
-  color: white;
+  color: var(--text-color);
   font-size: 16px;
   resize: none;
 }
 
 .formInput:focus {
   outline: none;
-  border-bottom: 1px solid #4a90e2;
+  border-bottom: 1px solid var(--blue-color);
 }
 
 .inputError {
@@ -69,8 +71,8 @@
 }
 
 .submitForm {
-  background-color: #3b82f6;
-  color: white;
+  background-color: var(--blue-color);
+  color: #ffffff;
   border: none;
   border-radius: 999px;
   padding: 12px 24px;
@@ -80,14 +82,15 @@
 }
 
 .submitForm:hover {
-  background-color: #2563eb;
+  background-color: var(--blue-hover-color);
 }
 
 .thankYouMessage {
   text-align: center;
-  color: white;
+  color: var(--text-color);
   padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--accent-color);
+  border-radius: 12px;
 }
 
 .reloadButton {
@@ -95,7 +98,7 @@
   padding: 0.5rem 1rem;
   background-color: var(--blue-color);
   border: none;
-  color: white;
+  color: #ffffff;
   font-size: 1rem;
   border-radius: 9999px;
   cursor: pointer;
