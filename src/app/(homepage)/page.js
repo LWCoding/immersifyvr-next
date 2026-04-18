@@ -145,13 +145,14 @@ export default function Home() {
                       <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                     </svg>
                   </div>
-                  <h2 className={styles.featureTitle}>Affordable Price</h2>
+                  <h2 className={styles.featureTitle}>Staying Active</h2>
                 </div>
                 <p className={styles.featureDescription}>
-                  ImmersifyVR addresses these health challenges by turning
-                  exercise into an enjoyable and immersive experience for older
-                  adults. We offer a virtual reality exercise simulator with many
-                  immersive experiences that range in intensity.
+                  ImmersifyVR provides a variety of activities designed to
+                  keep users active and engaged. Our activities encourage users to 
+                  interact with virtual environments. Our activities are designed
+                  to keep users active without the monotony and potential hazard 
+                  of traditional exercise.
                 </p>
               </div>
             </div>
