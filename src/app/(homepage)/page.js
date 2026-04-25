@@ -49,10 +49,10 @@ export default function Home() {
               style={{
                 flex: "1",
                 textAlign: "center",
-                lineHeight: "1.8",
+                lineHeight: "1.6",
                 color: "var(--text-color)",
                 padding: "4rem 3rem",
-                fontSize: "1.2rem",
+                fontSize: "1rem",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -116,8 +116,8 @@ export default function Home() {
                 </div>
                 <p className={styles.featureDescription}>
                   Our VR experiences are story-driven, empowering users to
-                  become the protagonists of captivating adventures. By placing
-                  them at the center of immersive, interactive worlds,
+                  become the protagonists of captivating adventures.
+                  By placing them at the center of immersive, interactive worlds,
                   ImmersifyVR transforms exercise into a meaningful experience
                   that feels exciting.
                 </p>
@@ -142,13 +142,15 @@ export default function Home() {
                       <path d="M12 17h.01"></path>
                     </svg>
                   </div>
-                  <h2 className={styles.featureTitle}>Accessibility</h2>
+                  <h2 className={styles.featureTitle}>Accessible Design</h2>
                 </div>
                 <p className={styles.featureDescription}>
-                  ImmersifyVR addresses these health challenges by turning
-                  exercise into an enjoyable and immersive experience for older
-                  adults. We offer a virtual reality exercise simulator with
-                  many immersive experiences that range in intensity.
+                ImmersifyVR is designed with accessibility at its core,
+                creating intuitive experiences for users with different
+                levels of technological and VR familiarity.
+                With activities that vary in intensity,
+                our platform adapts to each user’s needs, comfort, and abilities,
+                making exercise more approachable.
                 </p>
               </div>
             </div>
@@ -174,13 +176,14 @@ export default function Home() {
                       <path d="M3 21v-5h5"></path>
                     </svg>
                   </div>
-                  <h2 className={styles.featureTitle}>Smooth Process</h2>
+                  <h2 className={styles.featureTitle}>Lowering Barriers</h2>
                 </div>
                 <p className={styles.featureDescription}>
-                  ImmersifyVR addresses these health challenges by turning
-                  exercise into an enjoyable and immersive experience for older
-                  adults. We offer a virtual reality exercise simulator with
-                  many immersive experiences that range in intensity.
+                ImmersifyVR works to lower the intimidating barriers
+                that often come with traditional exercise and new technology
+                by offering a more approachable, practical, and affordable
+                way for elderly and disabled users to stay active.
+
                 </p>
               </div>
             </div>
