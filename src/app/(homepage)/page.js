@@ -30,7 +30,7 @@ export default function Home() {
           </div>
           <div className={styles.heroImageWrap}>
             <Image
-              src="/img/chateau-playtester.png"
+              src="/img/bob-transparent.png"
               alt="Team member guiding a senior using a VR headset"
               width={600}
               height={900}
@@ -67,9 +67,8 @@ export default function Home() {
                 }}
               >
                 <p style={{ margin: "0 0 1.5rem 0" }}>
-                  <span className={styles.pEmphText}>1 in 3</span> older adults
-                  suffer from a variety of health issues largely due to lack of
-                  exercise.
+                  1 in 3 older adults suffer from a variety of health issues
+                  largely due to lack of exercise.
                 </p>
                 <p style={{ margin: 0 }}>
                   ImmersifyVR is a virtual reality exercise simulator designed
