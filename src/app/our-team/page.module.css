@@ -14,11 +14,25 @@
   max-width: 100%;
 }
 
+.ourTeamIntro {
+  margin: 0 auto 1.25rem;
+  max-width: 720px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .sideBySideImage {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
+  }
+
+  .ourTeamIntro {
+    margin-bottom: 1rem;
   }
 }

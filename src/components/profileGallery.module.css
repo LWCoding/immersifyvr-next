@@ -1,61 +1,66 @@
 .gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 24px;
   padding: 32px;
 }
 
 .profileCard {
-  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
   border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-height: 320px;
 }
 
-.profileCard:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.profileImage {
-  width: 100px;
-  height: 100px;
+.profileBg {
   object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 16px;
+}
+
+.profileOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.profileText {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 18px;
+  color: #ffffff;
+  gap: 6px;
 }
 
 .profileName {
-  font-size: 18px;
-  font-weight: 600;
-  margin: 8px 0 4px;
-  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  color: #ffffff;
 }
 
 .profileRole {
   font-size: 14px;
-  color: var(--text-color);
-}
-
-.introductionSection {
-  margin-top: 16px;
-  padding-top: 16px;
-  border-top: 1px solid var(--border-subtle);
-}
-
-.introductionText {
-  font-size: 13px;
-  line-height: 1.5;
-  color: var(--text-color);
   margin: 0;
-  text-align: left;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.profileIntro {
+  font-size: 15px;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.92);
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 @media (max-width: 1024px) {
   .gallery {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
@@ -70,5 +75,6 @@
   .profileCard {
     max-width: 280px; /* Limit card width on mobile */
     width: 100%;
+    min-height: 300px;
   }
 }

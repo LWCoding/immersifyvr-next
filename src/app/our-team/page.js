@@ -18,59 +18,14 @@ export default function OurTeam() {
       <div className={styles.contentBelowNav}>
       <SectionBand>
         <SquishToMiddle>
-        <ContentBlock titleText="Who We Are">
-          <SideBySide>
-            <div
-              style={{
-                flex: "1",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <Image
-                className={styles.sideBySideImage}
-                src="/img/presentation.avif"
-                alt="A team member helping out an older adult"
-                width={600}
-                height={350}
-              />
-            </div>
-            <div
-              style={{
-                flex: "1",
-                textAlign: "center",
-                lineHeight: "1.8",
-                color: "var(--text-color)",
-                padding: "4rem 3rem",
-                fontSize: "1.2rem",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                minHeight: "400px",
-              }}
-            >
-              <p
-                style={{
-                  margin: 0,
-                  maxWidth: "600px",
-                  fontWeight: "400",
-                }}
-              >
-                Our project idea along with the team stems from our shared
-                passion for virtual reality, game development, and improving the
-                lives of the elderly. Our team members are all young teenagers
-                with grandparents who face the same issues we work to solve with
-                ImmersifyVR.
-              </p>
-            </div>
-          </SideBySide>
-        </ContentBlock>
-        </SquishToMiddle>
-      </SectionBand>
-      <SectionBand alt>
-        <SquishToMiddle>
         <ContentBlock titleText="Our Team">
+          <p className={styles.ourTeamIntro}>
+            Our project idea along with the team stems from our shared passion
+            for virtual reality, game development, and improving the lives of
+            the elderly. Our team members are all young teenagers with
+            grandparents who face the same issues we work to solve with
+            ImmersifyVR.
+          </p>
           <ProfileGallery
             profiles={[
               {
@@ -110,7 +65,7 @@ export default function OurTeam() {
         </ContentBlock>
         </SquishToMiddle>
       </SectionBand>
-      <SectionBand>
+      <SectionBand alt>
         <SquishToMiddle>
         <ContentBlock titleText="Contact Us">
           <SideBySide>
