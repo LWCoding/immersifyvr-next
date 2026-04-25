@@ -43,50 +43,14 @@ export default function Home() {
 
       <section className={`${styles.homeSection} ${styles.homeSectionOverHero}`}>
         <SquishToMiddle>
-        <ContentBlock titleText="What We Do">
-          <SideBySide>
-            <div
-              style={{
-                flex: "1",
-                textAlign: "center",
-                lineHeight: "1.6",
-                color: "var(--text-color)",
-                padding: "4rem 3rem",
-                fontSize: "1rem",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                minHeight: "200px",
-              }}
-            >
-              <div
-                style={{
-                  margin: 0,
-                  maxWidth: "600px",
-                  fontWeight: "400",
-                }}
-              >
-                <p style={{ margin: "0 0 1.5rem 0" }}>
-                  1 in 3 older adults suffer from a variety of health issues
-                  largely due to lack of exercise.
-                </p>
-                <p style={{ margin: 0 }}>
-                  ImmersifyVR is a virtual reality exercise simulator designed
-                  to make exercising fun.
-                </p>
-              </div>
-            </div>
-            <div>
-              <Image
-                className={styles.sideBySideImage}
-                src="/img/chateau-1.avif"
-                alt="A team member helping out an older adult"
-                width={500}
-                height={250}
-              />
-            </div>
-          </SideBySide>
-        </ContentBlock>
+          <div className={styles.homeQuote}>
+            <h2 className={styles.homeQuoteText}>
+              ImmersifyVR is a{" "}
+              <span className={styles.accent}>virtual reality</span> exercise
+              simulator designed to make{" "}
+              <span className={styles.accent}>exercising fun</span>.
+            </h2>
+          </div>
         </SquishToMiddle>
       </section>
       <section className={`${styles.homeSection} ${styles.homeSectionAlt}`}>
