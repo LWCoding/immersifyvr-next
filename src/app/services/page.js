@@ -3,9 +3,7 @@ import styles from "./page.module.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import ContentBlock from "@/components/contentBlock";
-import SideBySide from "@/components/sideBySide";
 import SquishToMiddle from "@/components/squishToMiddle";
-import ImageGallery from "@/components/imageGallery";
 import QuoteButton from "@/components/quoteButton";
 import SectionBand from "@/components/sectionBand";
 
@@ -119,64 +117,6 @@ export default function Services() {
               </div>
             </div>
           </div>
-        </ContentBlock>
-        </SquishToMiddle>
-      </SectionBand>
-      <SectionBand>
-        <SquishToMiddle>
-        <ContentBlock titleText="Example Experiences">
-          <SideBySide>
-            <div className={styles.exampleExperienceColumn}>
-              <ImageGallery
-                images={[
-                  "/img/beach-view.png",
-                  "/img/swimming-1.avif",
-                  "/img/swimming-2.avif",
-                  "/img/swimming-3.avif",
-                ]}
-                altText="Virtual Swimming Experience"
-              />
-              <h2>Virtual Swimming</h2>
-              <p>
-                Swim around in a virtual ocean environment and catch as many
-                fish as you can! Users can expect a low-moderate intensity upper
-                body workout.
-              </p>
-            </div>
-            <div className={styles.exampleExperienceColumn}>
-              <ImageGallery
-                images={["/img/spaceball-1.avif", "/img/spaceball-2.avif"]}
-                altText="Spaceball Experience"
-              />
-              <h2>Spaceball</h2>
-              <p>
-                Play a tennis-like game in a virtual space environment! Users
-                can expect a moderate intensity upper body workout.
-              </p>
-            </div>
-            <div className={styles.exampleExperienceColumn}>
-              <ImageGallery
-                images={["/img/rock-climbing.png"]}
-                altText="Rock Climbing Experience"
-              />
-              <h2>Rock Climbing</h2>
-              <p
-                style={{
-                  fontSize: "0.9em",
-                  fontStyle: "italic",
-                  color: "#888",
-                  marginTop: "-0.8rem",
-                  marginBottom: "0.5rem",
-                }}
-              >
-                (Work in Progress)
-              </p>
-              <p>
-                Explore a new and exciting world, one rock at a time. A low
-                intensity workout that allows users to climb at their own pace.
-              </p>
-            </div>
-          </SideBySide>
         </ContentBlock>
         </SquishToMiddle>
       </SectionBand>

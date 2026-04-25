@@ -57,10 +57,6 @@
   color: var(--text-color);
 }
 
-.exampleExperienceColumn p {
-  line-height: 1.6;
-}
-
 @media (max-width: 768px) {
   .offerRow {
     flex-direction: column;
@@ -243,7 +239,7 @@
 
 /* Quote Section with Background Image */
 .quoteSection {
-  margin: 4rem 0;
+  margin: 4rem 0 0;
   width: 100%;
 }
 

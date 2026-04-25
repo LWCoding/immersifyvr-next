@@ -134,6 +134,25 @@
   color: var(--blue-color);
 }
 
+.exampleExperienceColumn h2 {
+  margin: 1rem 0 0.5rem;
+  color: var(--text-color);
+}
+
+.exampleExperienceColumn p {
+  line-height: 1.6;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.wipNote {
+  font-size: 0.9em;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-top: -0.6rem;
+  margin-bottom: 0.75rem;
+}
+
 .homeSection :global(h1) {
   text-align: center;
 }
@@ -220,6 +239,103 @@
   margin-top: 0.5rem;
 }
 
+.testimonialsStack {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+
+.testimonialsCards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+  margin-top: 0.5rem;
+}
+
+.testimonialCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.1rem 1.1rem 1.25rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+.testimonialCardAvatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  margin-bottom: 0.75rem;
+  flex: none;
+}
+
+.testimonialCardAvatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonialCardMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.testimonialRow {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 2.25rem;
+  align-items: center;
+}
+
+.testimonialRowReverse {
+  grid-template-columns: 1fr 180px;
+}
+
+.testimonialRowReverse .testimonialMedia {
+  order: 2;
+}
+
+.testimonialRowReverse .testimonialBody {
+  order: 1;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.testimonialMedia {
+  width: 180px;
+  height: 180px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  background: #ffffff;
+}
+
+.testimonialRowReverse .testimonialName,
+.testimonialRowReverse .testimonialRole,
+.testimonialRowReverse .testimonialText {
+  text-align: right;
+}
+
+.testimonialMedia img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonialBody {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
 .testimonialColumn {
   display: flex;
   flex-direction: column;
@@ -228,19 +344,18 @@
 }
 
 .testimonialName {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.05rem;
+  font-weight: 700;
   color: var(--text-color);
-  margin-bottom: 0;
+  margin: 0;
   text-align: center;
 }
 
 .testimonialRole {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 400;
   color: var(--text-muted);
-  margin-top: 0.2rem;
-  margin-bottom: 1rem;
+  margin: 0;
   text-align: center;
   font-style: italic;
 }
@@ -248,8 +363,7 @@
 .testimonialText {
   font-size: 1rem;
   line-height: 1.6;
-  margin-top: 1.5rem;
-  font-style: italic;
+  margin-top: 0.85rem;
   color: var(--text-color);
   text-align: center;
 }
@@ -287,6 +401,26 @@
   .columnDivider {
     display: none;
   }
+
+  .testimonialRow,
+  .testimonialRowReverse {
+    grid-template-columns: 160px 1fr;
+    gap: 1.5rem;
+  }
+
+  .testimonialRowReverse {
+    grid-template-columns: 1fr 160px;
+  }
+
+  .testimonialMedia {
+    width: 160px;
+    height: 160px;
+  }
+
+  .testimonialsCards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -302,6 +436,43 @@
   .testimonialImage {
     width: 180px;
     height: 180px;
+  }
+
+  .testimonialsStack {
+    gap: 2rem;
+  }
+
+  .testimonialsCards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .testimonialRow,
+  .testimonialRowReverse {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .testimonialMedia {
+    width: min(280px, 100%);
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+  }
+
+  .testimonialBody {
+    align-items: center;
+    text-align: center;
+  }
+
+  .testimonialName,
+  .testimonialRole,
+  .testimonialText {
+    text-align: center;
+  }
+
+  .testimonialText {
+    margin-top: 1rem;
   }
 }
 

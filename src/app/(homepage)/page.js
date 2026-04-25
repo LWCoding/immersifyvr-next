@@ -9,6 +9,7 @@ import QuoteButton from "@/components/quoteButton";
 import ContentBlock from "@/components/contentBlock";
 import SideBySide from "@/components/sideBySide";
 import SquishToMiddle from "@/components/squishToMiddle";
+import ImageGallery from "@/components/imageGallery";
 
 export default function Home() {
   return (
@@ -53,6 +54,129 @@ export default function Home() {
           </div>
         </SquishToMiddle>
       </section>
+
+      <section className={`${styles.homeSection} ${styles.homeSectionAlt}`}>
+        <SquishToMiddle>
+          <ContentBlock>
+            <div className={styles.testimonialsCards}>
+              <div className={styles.testimonialCard}>
+                <div className={styles.testimonialCardAvatar}>
+                  <Image
+                    src="/img/gloria.avif"
+                    alt="Ms. Gloria"
+                    width={88}
+                    height={88}
+                  />
+                </div>
+                <div className={styles.testimonialCardMeta}>
+                  <div className={styles.testimonialName}>Ms. Gloria</div>
+                  <div className={styles.testimonialRole}>Senior Tester</div>
+                </div>
+                <p className={styles.testimonialText}>
+                  &ldquo;[It] would help us to go see things that are not
+                  possible anymore since we can&apos;t travel, we are limited in
+                  mobility … We wanna go see, and we can actually use these and
+                  actually place yourself there, and be on the boat. And see
+                  things that you wouldn&apos;t otherwise.&rdquo;
+                </p>
+              </div>
+
+              <div className={styles.testimonialCard}>
+                <div className={styles.testimonialCardAvatar}>
+                  <Image
+                    src="/img/ed1.avif"
+                    alt="Ed Loeswick"
+                    width={88}
+                    height={88}
+                  />
+                </div>
+                <div className={styles.testimonialCardMeta}>
+                  <div className={styles.testimonialName}>Ed Loeswick</div>
+                  <div className={styles.testimonialRole}>Personal Trainer</div>
+                </div>
+                <p className={styles.testimonialText}>
+                  &ldquo;You got something [older adults] really want…
+                  Conceptually, it&apos;s a great idea. And in terms of people
+                  liking to use it? Off the charts.&rdquo;
+                </p>
+              </div>
+
+              <div className={styles.testimonialCard}>
+                <div className={styles.testimonialCardAvatar}>
+                  <Image
+                    src="/img/bob.avif"
+                    alt="Bob (Chateau Cupertino)"
+                    width={88}
+                    height={88}
+                  />
+                </div>
+                <div className={styles.testimonialCardMeta}>
+                  <div className={styles.testimonialName}>
+                    Bob (Chateau Cupertino)
+                  </div>
+                  <div className={styles.testimonialRole}>Senior Tester</div>
+                </div>
+                <p className={styles.testimonialText}>
+                  &ldquo;In the afternoon I get really lonely and bored,
+                  because just the tablet is not enough. I think this virtual
+                  reality thing would make it more fun.&rdquo; (paraphrased)
+                </p>
+              </div>
+            </div>
+          </ContentBlock>
+        </SquishToMiddle>
+      </section>
+
+      <section className={styles.homeSection}>
+        <SquishToMiddle>
+          <ContentBlock titleText="Example Experiences">
+            <SideBySide>
+              <div className={styles.exampleExperienceColumn}>
+                <ImageGallery
+                  images={[
+                    "/img/beach-view.png",
+                    "/img/swimming-1.avif",
+                    "/img/swimming-2.avif",
+                    "/img/swimming-3.avif",
+                  ]}
+                  altText="Virtual Swimming Experience"
+                />
+                <h2>Virtual Swimming</h2>
+                <p>
+                  Swim around in a virtual ocean environment and catch as many
+                  fish as you can! Users can expect a low-moderate intensity
+                  upper body workout.
+                </p>
+              </div>
+              <div className={styles.exampleExperienceColumn}>
+                <ImageGallery
+                  images={["/img/spaceball-1.avif", "/img/spaceball-2.avif"]}
+                  altText="Spaceball Experience"
+                />
+                <h2>Spaceball</h2>
+                <p>
+                  Play a tennis-like game in a virtual space environment! Users
+                  can expect a moderate intensity upper body workout.
+                </p>
+              </div>
+              <div className={styles.exampleExperienceColumn}>
+                <ImageGallery
+                  images={["/img/rock-climbing.png"]}
+                  altText="Rock Climbing Experience"
+                />
+                <h2>Rock Climbing</h2>
+                <p className={styles.wipNote}>(Work in Progress)</p>
+                <p>
+                  Explore a new and exciting world, one rock at a time. A low
+                  intensity workout that allows users to climb at their own
+                  pace.
+                </p>
+              </div>
+            </SideBySide>
+          </ContentBlock>
+        </SquishToMiddle>
+      </section>
+
       <section className={`${styles.homeSection} ${styles.homeSectionAlt}`}>
         <SquishToMiddle>
         <ContentBlock titleText="Our Core Pillars">
@@ -180,75 +304,6 @@ export default function Home() {
               </div>
             </div>
           </SideBySide>
-        </ContentBlock>
-        </SquishToMiddle>
-      </section>
-      <section className={styles.homeSection}>
-        <SquishToMiddle>
-        <ContentBlock titleText="Testimonials">
-          <div className={styles.testimonialsGrid}>
-            <div className={styles.testimonialColumn}>
-              <h3 className={styles.testimonialName}>Ms. Gloria</h3>
-              <h4 className={styles.testimonialRole}>Senior Tester</h4>
-              <div className={styles.testimonialImage}>
-                <Image
-                  src="/img/gloria.avif"
-                  alt="Virtual reality experience"
-                  width={240}
-                  height={240}
-                />
-              </div>
-              <p className={styles.testimonialText}>
-                &ldquo;[It] would help us to go see things that are not possible
-                anymore since we can&apos;t travel, we are limited in mobility …
-                We wanna go see, and we can actually use these and actually
-                place yourself there, and be on the boat. And see things that
-                you wouldn&apos;t otherwise.&rdquo;
-              </p>
-            </div>
-
-            <div className={styles.columnDivider}></div>
-
-            <div className={styles.testimonialColumn}>
-              <h3 className={styles.testimonialName}>Ed Loeswick</h3>
-              <h4 className={styles.testimonialRole}>Personal Trainer</h4>
-              <div className={styles.testimonialImage}>
-                <Image
-                  src="/img/ed1.avif"
-                  alt="Virtual reality experience"
-                  width={240}
-                  height={240}
-                />
-              </div>
-              <p className={styles.testimonialText}>
-                &ldquo;You got something [older adults] really want…
-                Conceptually, it&apos;s a great idea. And in terms of people
-                liking to use it? Off the charts.&rdquo;
-              </p>
-            </div>
-
-            <div className={styles.columnDivider}></div>
-
-            <div className={styles.testimonialColumn}>
-              <h3 className={styles.testimonialName}>
-                Bob (Chateau Cupertino)
-              </h3>
-              <h4 className={styles.testimonialRole}>Senior Tester</h4>
-              <div className={styles.testimonialImage}>
-                <Image
-                  src="/img/bob.avif"
-                  alt="Virtual reality experience"
-                  width={240}
-                  height={240}
-                />
-              </div>
-              <p className={styles.testimonialText}>
-                &ldquo;In the afternoon I get really lonely and bored, because
-                just the tablet is not enough. I think this virtual reality
-                thing would make it more fun.&rdquo; (paraphrased)
-              </p>
-            </div>
-          </div>
         </ContentBlock>
         </SquishToMiddle>
       </section>
