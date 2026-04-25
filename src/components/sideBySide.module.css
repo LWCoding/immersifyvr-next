@@ -30,6 +30,8 @@
 
   .sideBySide > * {
     margin: 0;
+    flex: none;
+    width: 100%;
   }
   
   /* Add spacing between consecutive SideBySide components in mobile */
