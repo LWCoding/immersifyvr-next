@@ -41,7 +41,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section className={styles.homeSection}>
+      <section className={`${styles.homeSection} ${styles.homeSectionOverHero}`}>
         <SquishToMiddle>
         <ContentBlock titleText="What We Do">
           <SideBySide>
