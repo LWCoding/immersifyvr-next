@@ -2,79 +2,136 @@
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 24px;
-  padding: 32px;
+  padding: 0;
+  align-items: start;
 }
 
 .profileCard {
   position: relative;
   overflow: hidden;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  min-height: 320px;
+  border-radius: 24px;
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  height: fit-content;
 }
 
-.profileBg {
+.profileImageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.profileImage {
   object-fit: cover;
+  object-position: center;
 }
 
-.profileOverlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+.profileInfoPanel {
+  background: var(--band-alt);
+  padding: 14px 16px 16px;
+  transition: background-color 180ms ease;
 }
 
-.profileText {
-  position: absolute;
-  inset: 0;
+.profileInfoPanelOpen {
+  background: var(--accent-color);
+}
+
+.profileHeaderRow {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 18px;
-  color: #ffffff;
-  gap: 6px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
 }
 
 .profileName {
-  font-size: 20px;
-  font-weight: 700;
   margin: 0;
-  color: #ffffff;
+  color: var(--text-color);
+  font-size: 1.65rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: 0.01em;
+  text-transform: none;
 }
 
 .profileRole {
-  font-size: 14px;
-  margin: 0;
-  color: rgba(255, 255, 255, 0.9);
+  margin: 3px 0 0;
+  color: var(--text-color);
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.expandButton {
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.expandButton:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.expandArrow {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg) translateY(-1px);
+  transition: transform 180ms ease;
+}
+
+.expandArrowOpen {
+  transform: rotate(225deg) translateY(-1px);
+}
+
+.profileIntroWrap {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 260ms ease, margin-top 260ms ease;
+}
+
+.profileIntroWrapOpen {
+  max-height: 180px;
+  min-height: 180px;
+  margin-top: 12px;
 }
 
 .profileIntro {
-  font-size: 15px;
-  line-height: 1.45;
-  color: rgba(255, 255, 255, 0.92);
   margin: 0;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  color: var(--text-muted);
+  font-size: 0.96rem;
+  line-height: 1.6;
 }
 
 @media (max-width: 1024px) {
   .gallery {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
   }
 }
 
 @media (max-width: 768px) {
   .gallery {
-    grid-template-columns: 1fr; /* Single column on mobile */
-    gap: 20px;
-    padding: 20px;
-    justify-items: center; /* Center the cards */
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
-  
-  .profileCard {
-    max-width: 280px; /* Limit card width on mobile */
-    width: 100%;
-    min-height: 300px;
+
+  .profileName {
+    font-size: 1.35rem;
+  }
+
+  .profileRole {
+    font-size: 1rem;
+  }
+
+  .profileIntro {
+    font-size: 0.94rem;
   }
 }
