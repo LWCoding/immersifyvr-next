@@ -9,7 +9,7 @@
 .profileCard {
   position: relative;
   overflow: hidden;
-  border-radius: 24px;
+  border-radius: 18px;
   background: #ffffff;
   border: 1px solid #e6e6e6;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);

@@ -12,7 +12,22 @@ export default function Services() {
     <div>
       <Navbar />
       <div className={styles.contentBelowNav}>
-      <SectionBand>
+      <SectionBand tightTop>
+        <SquishToMiddle>
+        <ContentBlock titleText="Video Demo">
+          <iframe
+            className={styles.videoDemo}
+            src="https://www.youtube.com/embed/Ayzf8Rt9lu8?si=FTobvLvP9wEoCXDF"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </ContentBlock>
+        </SquishToMiddle>
+      </SectionBand>
+      <SectionBand alt>
         <SquishToMiddle>
         <ContentBlock titleText="What We Offer">
           <div className={styles.whatWeOfferContainer}>
@@ -64,7 +79,7 @@ export default function Services() {
         </ContentBlock>
         </SquishToMiddle>
       </SectionBand>
-      <SectionBand alt>
+      <SectionBand>
         <SquishToMiddle>
         <ContentBlock titleText="The Process">
           <div className={styles.servicesGrid}>
@@ -77,11 +92,11 @@ export default function Services() {
                   </h2>
                 </div>
                 <div className={styles.featureDescription}>
-                  <ul>
-                    <li>Host promotional workshops at retirement homes</li>
-                    <li>Our team comes to you</li>
-                    <li>Demonstrate VR experiences to residents and staff</li>
-                  </ul>
+                  <p>
+                    We host promotional workshops at retirement homes. Our team
+                    comes to you to demonstrate VR experiences to residents and
+                    staff.
+                  </p>
                 </div>
               </div>
             </div>
@@ -90,15 +105,15 @@ export default function Services() {
                 <div className={styles.featureCardHeader}>
                   <div className={styles.numberIcon}>2</div>
                   <h2 className={styles.featureTitle}>
-                    Personal Trainer One-on-Ones
+                    One-on-Ones with Personal Trainers
                   </h2>
                 </div>
                 <div className={styles.featureDescription}>
-                  <ul>
-                    <li>One-on-one sessions with residents</li>
-                    <li>Personalized VR exercise experiences</li>
-                    <li>Individual attention and support</li>
-                  </ul>
+                  <p>
+                    One-on-one sessions with residents feature personalized VR
+                    exercise experiences, with individual attention and support
+                    throughout.
+                  </p>
                 </div>
               </div>
             </div>
@@ -106,32 +121,17 @@ export default function Services() {
               <div className={styles.featureCardContent}>
                 <div className={styles.featureCardHeader}>
                   <div className={styles.numberIcon}>3</div>
-                  <h2 className={styles.featureTitle}>Support</h2>
+                  <h2 className={styles.featureTitle}>Ongoing Technical Support</h2>
                 </div>
                 <div className={styles.featureDescription}>
-                  <ul>
-                    <li>Ongoing technical support</li>
-                    <li>Troubleshoot issues and provide assistance</li>
-                  </ul>
+                  <p>
+                    Ongoing technical support helps you troubleshoot issues and
+                    get assistance whenever you need it.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-        </ContentBlock>
-        </SquishToMiddle>
-      </SectionBand>
-      <SectionBand alt>
-        <SquishToMiddle>
-        <ContentBlock titleText="Video Demo">
-          <iframe
-            className={styles.videoDemo}
-            src="https://www.youtube.com/embed/Ayzf8Rt9lu8?si=FTobvLvP9wEoCXDF"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
         </ContentBlock>
         </SquishToMiddle>
       </SectionBand>

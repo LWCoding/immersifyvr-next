@@ -261,7 +261,7 @@
   text-align: center;
   padding: 1.1rem 1.1rem 1.25rem;
   border: 1px solid var(--border-subtle);
-  border-radius: 18px;
+  border-radius: 14px;
   background: #ffffff;
 }
 
@@ -311,7 +311,7 @@
 .testimonialMedia {
   width: 180px;
   height: 180px;
-  border-radius: 18px;
+  border-radius: 14px;
   overflow: hidden;
   border: 1px solid var(--border-subtle);
   background: #ffffff;
@@ -480,7 +480,7 @@
 .featureCard {
   background-color: #ffffff;
   border: 1px solid var(--border-subtle);
-  border-radius: 16px;
+  border-radius: 12px;
   box-shadow: none;
   padding: 20px;
   text-align: center;

@@ -102,47 +102,49 @@ export default function QuoteForm() {
 				</div>
 			) : (
 				<form className={styles.formColumn} onSubmit={handleSubmit} noValidate>
-					<div className={styles.inputGroup}>
-						<label className={styles.formLabel} htmlFor="first-name">
-							First Name <span className={styles.required}>*</span>
-						</label>
-						<input
-							className={`${styles.formInput} ${errors.first_name ? styles.inputError : ""}`}
-							type="text"
-							id="first-name"
-							name="first_name"
-							value={values.first_name}
-							onChange={(e) => handleChange("first_name", e.target.value)}
-							onBlur={(e) => handleBlur("first_name", e.target.value)}
-							aria-invalid={!!errors.first_name}
-							aria-describedby={errors.first_name ? "first-name-error" : undefined}
-						/>
-						{touched.first_name && errors.first_name ? (
-							<span id="first-name-error" className={styles.fieldError} role="alert">
-								{errors.first_name}
-							</span>
-						) : null}
-					</div>
-					<div className={styles.inputGroup}>
-						<label className={styles.formLabel} htmlFor="last-name">
-							Last Name <span className={styles.required}>*</span>
-						</label>
-						<input
-							className={`${styles.formInput} ${errors.last_name ? styles.inputError : ""}`}
-							type="text"
-							id="last-name"
-							name="last_name"
-							value={values.last_name}
-							onChange={(e) => handleChange("last_name", e.target.value)}
-							onBlur={(e) => handleBlur("last_name", e.target.value)}
-							aria-invalid={!!errors.last_name}
-							aria-describedby={errors.last_name ? "last-name-error" : undefined}
-						/>
-						{touched.last_name && errors.last_name ? (
-							<span id="last-name-error" className={styles.fieldError} role="alert">
-								{errors.last_name}
-							</span>
-						) : null}
+					<div className={styles.nameRow}>
+						<div className={styles.inputGroup}>
+							<label className={styles.formLabel} htmlFor="first-name">
+								First Name <span className={styles.required}>*</span>
+							</label>
+							<input
+								className={`${styles.formInput} ${errors.first_name ? styles.inputError : ""}`}
+								type="text"
+								id="first-name"
+								name="first_name"
+								value={values.first_name}
+								onChange={(e) => handleChange("first_name", e.target.value)}
+								onBlur={(e) => handleBlur("first_name", e.target.value)}
+								aria-invalid={!!errors.first_name}
+								aria-describedby={errors.first_name ? "first-name-error" : undefined}
+							/>
+							{touched.first_name && errors.first_name ? (
+								<span id="first-name-error" className={styles.fieldError} role="alert">
+									{errors.first_name}
+								</span>
+							) : null}
+						</div>
+						<div className={styles.inputGroup}>
+							<label className={styles.formLabel} htmlFor="last-name">
+								Last Name <span className={styles.required}>*</span>
+							</label>
+							<input
+								className={`${styles.formInput} ${errors.last_name ? styles.inputError : ""}`}
+								type="text"
+								id="last-name"
+								name="last_name"
+								value={values.last_name}
+								onChange={(e) => handleChange("last_name", e.target.value)}
+								onBlur={(e) => handleBlur("last_name", e.target.value)}
+								aria-invalid={!!errors.last_name}
+								aria-describedby={errors.last_name ? "last-name-error" : undefined}
+							/>
+							{touched.last_name && errors.last_name ? (
+								<span id="last-name-error" className={styles.fieldError} role="alert">
+									{errors.last_name}
+								</span>
+							) : null}
+						</div>
 					</div>
 					<div className={styles.inputGroup}>
 						<label className={styles.formLabel} htmlFor="email">
@@ -184,7 +186,7 @@ export default function QuoteForm() {
 							Estimated Number of Residents
 						</label>
 						<select
-							className={styles.formInput}
+							className={`${styles.formInput}${values.residents === "" ? ` ${styles.selectPlaceholder}` : ""}`}
 							id="residents"
 							name="residents"
 							value={values.residents}

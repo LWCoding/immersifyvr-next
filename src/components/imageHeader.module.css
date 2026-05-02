@@ -15,7 +15,7 @@
 .overlay {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 1.5rem 3rem;
-  border-radius: 8px;
+  border-radius: 6px;
   box-sizing: border-box;
   max-width: min(100%, calc(100vw - 2rem));
 }

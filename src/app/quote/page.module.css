@@ -1,17 +1,22 @@
 .quoteContainer {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: flex-start;
   margin-top: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 2rem;
 }
 
 .contactDetails {
-  flex: 1;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
   background-color: var(--accent-color);
-  border-radius: 16px;
+  border-radius: 12px;
   padding: 2.5rem;
   color: var(--text-color);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   border: 1px solid var(--border-subtle);
 }
 
@@ -65,7 +70,9 @@
 }
 
 .formSection {
-  flex: 1;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
@@ -79,10 +86,10 @@
 
 @media (max-width: 768px) {
   .quoteContainer {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 2rem;
-    align-items: center;
     width: 100%;
+    padding: 0 1rem;
   }
   
   .contactDetails {

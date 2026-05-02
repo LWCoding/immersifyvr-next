@@ -9,9 +9,18 @@
   background-color: var(--band-alt);
 }
 
+/* Less top padding for a lead section (e.g. video directly under the nav) */
+.band.bandTightTop {
+  padding-top: 0.75rem;
+}
+
 @media (max-width: 768px) {
   .band {
     padding: 2.25rem 0;
+  }
+
+  .band.bandTightTop {
+    padding-top: 0.5rem;
   }
 }
 

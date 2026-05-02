@@ -1,6 +1,10 @@
 .formContainer {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 0;
 }
 
 .form {
@@ -16,11 +20,15 @@
   width: 100%;
 }
 
-.formContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+.nameRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 1.25rem;
+  width: 100%;
+}
+
+.nameRow .inputGroup {
+  min-width: 0;
 }
 
 .inputGroup {
@@ -30,7 +38,7 @@
 
 .formLabel {
   margin-bottom: 8px;
-  font-size: 14px;
+  font-size: 1rem;
   color: var(--text-color);
 }
 
@@ -46,7 +54,18 @@
   padding: 5px 0;
   color: var(--text-color);
   width: 100%;
-  max-width: 400px;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.formInput::placeholder {
+  font-family: inherit;
+}
+
+select.formInput.selectPlaceholder {
+  color: var(--text-muted);
 }
 
 .formInput:focus {
@@ -69,6 +88,10 @@
   color: var(--text-color);
 }
 
+.formInput option[value=""] {
+  color: var(--text-muted);
+}
+
 .formInput option:hover {
   background-color: var(--accent-color);
   color: var(--text-color);
@@ -83,7 +106,8 @@
   font-size: 16px;
   cursor: pointer;
   width: 100%;
-  max-width: 400px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .submitForm:hover {
@@ -95,7 +119,7 @@
   color: var(--text-color);
   padding: 2rem;
   background-color: var(--accent-color);
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .reloadButton {
@@ -120,20 +144,24 @@
     gap: 1.5rem;
     width: 100%;
   }
+
+  .nameRow {
+    grid-template-columns: 1fr;
+  }
   
   .inputGroup {
     width: 100%;
-    max-width: 400px;
+    max-width: 100%;
   }
   
   .formInput {
     width: 100%;
-    max-width: 400px;
+    max-width: 100%;
   }
   
   .submitForm {
     width: 100%;
-    max-width: 400px;
+    max-width: 100%;
     padding: 12px 20px;
   }
 }
