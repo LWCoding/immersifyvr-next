@@ -180,6 +180,10 @@
   color: var(--text-color);
 }
 
+.exampleExperienceColumn h2:has(+ .wipNote) {
+  margin-bottom: 0.15rem;
+}
+
 .exampleExperienceColumn p {
   line-height: 1.6;
   color: var(--text-color);
@@ -190,8 +194,13 @@
   font-size: 0.9em;
   font-style: italic;
   color: var(--text-muted);
-  margin-top: -0.6rem;
-  margin-bottom: 0.75rem;
+  line-height: 1.35;
+}
+
+/* Overrides imageGallery `.gallery + h2 + p` so WIP sits tight under the title */
+.exampleExperienceColumn h2 + .wipNote {
+  margin-top: 0;
+  margin-bottom: 0.45rem;
 }
 
 .homeSection :global(h1) {
