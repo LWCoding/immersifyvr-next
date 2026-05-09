@@ -12,7 +12,7 @@ export default function Services() {
     <div>
       <Navbar />
       <div className={styles.contentBelowNav}>
-      <SectionBand tightTop>
+      <SectionBand tightTop videoLead>
         <SquishToMiddle>
         <ContentBlock>
           <iframe
