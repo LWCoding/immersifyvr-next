@@ -54,18 +54,3 @@
   color: var(--blue-color);
 }
 
-.footerBottom {
-  text-align: center;
-  margin-top: 2rem;
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-
-.footerBottom a {
-  color: var(--text-muted);
-  text-decoration: none;
-}
-
-.footerBottom a:hover {
-  color: var(--blue-color);
-}
