@@ -1,3 +1,14 @@
+@keyframes heroEnter {
+  from {
+    opacity: 0;
+    transform: translateY(-1.25rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .hero {
   position: relative;
   min-height: 80vh;
@@ -40,6 +51,36 @@
   min-width: 260px;
   text-align: left;
   z-index: 2;
+}
+
+.heroContent > h2,
+.heroContent > p,
+.heroContent > a {
+  opacity: 0;
+  animation: heroEnter 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.heroContent > h2 {
+  animation-delay: 0.05s;
+}
+
+.heroContent > p {
+  animation-delay: 0.18s;
+}
+
+.heroContent > a {
+  display: inline-block;
+  animation-delay: 0.32s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heroContent > h2,
+  .heroContent > p,
+  .heroContent > a {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .heroImageWrap {
@@ -261,7 +302,7 @@
   text-align: center;
   padding: 1.1rem 1.1rem 1.25rem;
   border: 1px solid var(--border-subtle);
-  border-radius: 14px;
+  border-radius: 18px;
   background: #ffffff;
 }
 
@@ -311,7 +352,7 @@
 .testimonialMedia {
   width: 180px;
   height: 180px;
-  border-radius: 14px;
+  border-radius: 18px;
   overflow: hidden;
   border: 1px solid var(--border-subtle);
   background: #ffffff;
@@ -480,11 +521,11 @@
 .featureCard {
   background-color: #ffffff;
   border: 1px solid var(--border-subtle);
-  border-radius: 12px;
+  border-radius: 16px;
   box-shadow: none;
-  padding: 20px;
+  padding: 1rem 20px 20px;
   text-align: center;
-  margin: 0.5rem 0;
+  margin: 0;
   min-height: 260px;
   height: auto;
   width: 100%;
@@ -530,9 +571,9 @@
 
 @media (max-width: 768px) {
   .featureCard {
-    margin: 0.75rem 0;
+    margin: 0;
     min-height: 0;
-    padding: 16px;
+    padding: 1rem 16px 16px;
   }
 
   .featureTitle {

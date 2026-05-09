@@ -129,7 +129,7 @@ export default function Home() {
 
       <section className={styles.homeSection}>
         <SquishToMiddle>
-          <ContentBlock titleText="Example Experiences">
+          <ContentBlock titleText="Our Experiences">
             <SideBySide>
               <div className={styles.exampleExperienceColumn}>
                 <ImageGallery
@@ -179,7 +179,10 @@ export default function Home() {
 
       <section className={`${styles.homeSection} ${styles.homeSectionAlt}`}>
         <SquishToMiddle>
-        <ContentBlock titleText="Our Core Pillars">
+        <ContentBlock
+          titleText="Our Core Pillars"
+          headerSpacerSize="medium"
+        >
           <SideBySide>
             <div className={styles.featureCard}>
               <div className={styles.featureCardContent}>
