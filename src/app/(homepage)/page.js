@@ -17,6 +17,17 @@ export default function Home() {
       <Navbar />
 
       <div className={styles.hero}>
+        <div className={styles.heroBackdrop} aria-hidden="true">
+          <Image
+            src="/img/chateau-1.avif"
+            alt=""
+            fill
+            priority
+            className={styles.heroBackdropImage}
+            sizes="100vw"
+          />
+          <div className={styles.heroBackdropScrim} />
+        </div>
         <div className={styles.heroInner}>
           <div className={styles.heroContent}>
             <h2>
@@ -28,16 +39,6 @@ export default function Home() {
               <strong>physically active</strong>.
             </p>
             <QuoteButton />
-          </div>
-          <div className={styles.heroImageWrap}>
-            <Image
-              src="/img/bob-transparent.png"
-              alt="Team member guiding a senior using a VR headset"
-              width={600}
-              height={900}
-              className={styles.heroImage}
-              priority
-            />
           </div>
         </div>
       </div>
