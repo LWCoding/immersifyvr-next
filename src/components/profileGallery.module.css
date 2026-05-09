@@ -47,17 +47,17 @@
 .profileName {
   margin: 0;
   color: var(--text-color);
-  font-size: 1.65rem;
-  font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: 0.01em;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0.005em;
   text-transform: none;
 }
 
 .profileRole {
-  margin: 3px 0 0;
+  margin: 2px 0 0;
   color: var(--text-color);
-  font-size: 1.05rem;
+  font-size: 0.875rem;
   font-weight: 500;
 }
 
@@ -92,22 +92,27 @@
 }
 
 .profileIntroWrap {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 260ms ease, margin-top 260ms ease;
+  display: grid;
+  grid-template-rows: 0fr;
+  margin-top: 0;
+  transition: grid-template-rows 260ms ease, margin-top 260ms ease;
 }
 
 .profileIntroWrapOpen {
-  max-height: 180px;
-  min-height: 180px;
+  grid-template-rows: 1fr;
   margin-top: 12px;
+}
+
+.profileIntroInner {
+  min-height: 0;
+  overflow: hidden;
 }
 
 .profileIntro {
   margin: 0;
   color: var(--text-muted);
-  font-size: 0.96rem;
-  line-height: 1.6;
+  font-size: 0.8125rem;
+  line-height: 1.55;
 }
 
 @media (max-width: 1024px) {
@@ -124,14 +129,14 @@
   }
 
   .profileName {
-    font-size: 1.35rem;
+    font-size: 1.0625rem;
   }
 
   .profileRole {
-    font-size: 1rem;
+    font-size: 0.8125rem;
   }
 
   .profileIntro {
-    font-size: 0.94rem;
+    font-size: 0.8rem;
   }
 }

@@ -1,12 +1,6 @@
 .contentBelowNav {
-  padding-top: 2.5rem;
+  padding-top: 0;
   background-color: #ffffff;
-}
-
-@media (max-width: 768px) {
-  .contentBelowNav {
-    padding-top: 1.75rem;
-  }
 }
 
 .sideBySideImage {

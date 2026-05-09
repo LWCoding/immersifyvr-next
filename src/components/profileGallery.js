@@ -62,7 +62,9 @@ export default function ProfileGallery({ profiles }) {
                   openCards[index] ? styles.profileIntroWrapOpen : ""
                 }`}
               >
-                <p className={styles.profileIntro}>{profile.introduction}</p>
+                <div className={styles.profileIntroInner}>
+                  <p className={styles.profileIntro}>{profile.introduction}</p>
+                </div>
               </div>
             ) : null}
           </div>

@@ -16,7 +16,7 @@ export default function OurTeam() {
     <div>
       <Navbar />
       <div className={styles.contentBelowNav}>
-      <SectionBand>
+      <SectionBand tightTop>
         <SquishToMiddle>
         <ContentBlock titleText="Our Team">
           <p className={styles.ourTeamIntro}>
