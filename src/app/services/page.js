@@ -14,7 +14,7 @@ export default function Services() {
       <div className={styles.contentBelowNav}>
       <SectionBand tightTop>
         <SquishToMiddle>
-        <ContentBlock titleText="Video Demo">
+        <ContentBlock>
           <iframe
             className={styles.videoDemo}
             src="https://www.youtube.com/embed/Ayzf8Rt9lu8?si=FTobvLvP9wEoCXDF"
