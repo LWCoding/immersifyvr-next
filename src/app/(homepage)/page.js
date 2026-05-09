@@ -165,7 +165,6 @@ export default function Home() {
                   altText="Rock Climbing Experience"
                 />
                 <h2>Rock Climbing</h2>
-                <p className={styles.wipNote}>(Work in Progress)</p>
                 <p>
                   Explore a new and exciting world, one rock at a time. A low
                   intensity workout that allows users to climb at their own
