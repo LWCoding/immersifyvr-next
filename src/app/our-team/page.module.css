@@ -3,10 +3,53 @@
   background-color: #ffffff;
 }
 
-.sideBySideImage {
+.contactLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 2rem;
+}
+
+.contactImagePanel {
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--accent-color);
+  border-radius: 12px;
+  padding: 2.5rem;
+}
+
+.contactHeroImage {
   width: 100%;
   height: auto;
-  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.contactFormColumn {
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contactHeading {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.contactLead {
+  margin: 0 0 1.25rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
 }
 
 .ourTeamIntro {
@@ -20,11 +63,23 @@
 }
 
 @media (max-width: 768px) {
-  .sideBySideImage {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+  .contactLayout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .contactImagePanel {
+    padding: 2rem;
+  }
+
+  .contactHeading {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .contactLead {
+    text-align: center;
   }
 
   .ourTeamIntro {

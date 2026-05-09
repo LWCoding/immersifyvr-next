@@ -28,9 +28,19 @@
 }
 
 .profileInfoPanel {
+  --profile-panel-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
   background: var(--band-alt);
-  padding: 14px 16px 16px;
+  padding: 0;
+  border-radius: 0 0 var(--profile-panel-radius) var(--profile-panel-radius);
+  overflow: hidden;
   transition: background-color 180ms ease;
+}
+
+.profileInfoPanel:not(.profileInfoPanelOpen) {
+  min-height: 5.25rem;
 }
 
 .profileInfoPanelOpen {
@@ -39,9 +49,53 @@
 
 .profileHeaderRow {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 12px;
+  box-sizing: border-box;
+}
+
+.profileInfoPanel > .profileHeaderRow:not(.profileHeaderButton) {
+  padding: 14px 16px 10px;
+}
+
+.profileHeaderText {
+  min-width: 0;
+  text-align: left;
+}
+
+.profileHeaderButton {
+  width: 100%;
+  margin: 0;
+  padding: 14px 16px 10px;
+  border: none;
+  background: transparent;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  border-radius: 0;
+  text-align: left;
+  -webkit-tap-highlight-color: transparent;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.profileInfoPanelOpen .profileHeaderButton {
+  flex: 0 0 auto;
+  padding: 14px 16px 0;
+}
+
+.profileHeaderButton:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.profileHeaderButton:focus-visible {
+  outline: 2px solid var(--blue-color);
+  outline-offset: -2px;
+}
+
+.profileInfoPanelOpen .profileHeaderButton:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .profileName {
@@ -61,26 +115,11 @@
   font-weight: 500;
 }
 
-.expandButton {
-  width: 34px;
-  height: 34px;
-  border: none;
-  border-radius: 999px;
-  background: transparent;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  color: var(--text-color);
-}
-
-.expandButton:hover {
-  background: rgba(0, 0, 0, 0.06);
-}
-
 .expandArrow {
+  flex-shrink: 0;
   width: 10px;
   height: 10px;
+  margin: 0.35rem 6px 4px 10px;
   border-right: 2px solid currentColor;
   border-bottom: 2px solid currentColor;
   transform: rotate(45deg) translateY(-1px);
@@ -95,12 +134,17 @@
   display: grid;
   grid-template-rows: 0fr;
   margin-top: 0;
+  padding: 0 16px;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  min-height: 0;
   transition: grid-template-rows 260ms ease, margin-top 260ms ease;
 }
 
 .profileIntroWrapOpen {
   grid-template-rows: 1fr;
   margin-top: 12px;
+  padding-bottom: 12px;
 }
 
 .profileIntroInner {

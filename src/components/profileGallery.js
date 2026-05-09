@@ -33,14 +33,10 @@ export default function ProfileGallery({ profiles }) {
               openCards[index] ? styles.profileInfoPanelOpen : ""
             }`}
           >
-            <div className={styles.profileHeaderRow}>
-              <div>
-                <h3 className={styles.profileName}>{profile.name}</h3>
-                <p className={styles.profileRole}>{profile.role}</p>
-              </div>
+            {profile.introduction ? (
               <button
                 type="button"
-                className={styles.expandButton}
+                className={`${styles.profileHeaderRow} ${styles.profileHeaderButton}`}
                 onClick={() => toggleCard(index)}
                 aria-expanded={Boolean(openCards[index])}
                 aria-label={
@@ -49,13 +45,25 @@ export default function ProfileGallery({ profiles }) {
                     : `Expand ${profile.name} introduction`
                 }
               >
+                <div className={styles.profileHeaderText}>
+                  <h3 className={styles.profileName}>{profile.name}</h3>
+                  <p className={styles.profileRole}>{profile.role}</p>
+                </div>
                 <span
                   className={`${styles.expandArrow} ${
                     openCards[index] ? styles.expandArrowOpen : ""
                   }`}
+                  aria-hidden={true}
                 />
               </button>
-            </div>
+            ) : (
+              <div className={styles.profileHeaderRow}>
+                <div className={styles.profileHeaderText}>
+                  <h3 className={styles.profileName}>{profile.name}</h3>
+                  <p className={styles.profileRole}>{profile.role}</p>
+                </div>
+              </div>
+            )}
             {profile.introduction ? (
               <div
                 className={`${styles.profileIntroWrap} ${

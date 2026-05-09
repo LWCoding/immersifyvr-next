@@ -26,7 +26,7 @@ function validateField(name, value) {
 /*
 ContactForm component for displaying a contact form.
 */
-export default function ContactForm() {
+export default function ContactForm({ containerClassName = "" }) {
 	const [submitted, setSubmitted] = useState(false);
 	const [values, setValues] = useState({
 		first_name: "",
@@ -91,7 +91,13 @@ export default function ContactForm() {
 	}
 
 	return (
-		<div className={styles.formContainer}>
+		<div
+			className={
+				containerClassName
+					? `${styles.formContainer} ${containerClassName}`
+					: styles.formContainer
+			}
+		>
 			{submitted ? (
 				<div className={styles.thankYouMessage}>
 					<h2>Thank you for your submission!</h2>

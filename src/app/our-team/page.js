@@ -5,11 +5,10 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import SquishToMiddle from "@/components/squishToMiddle";
 import ContentBlock from "@/components/contentBlock";
-import SideBySide from "@/components/sideBySide";
 import ProfileGallery from "@/components/profileGallery";
 import ContactForm from "@/components/contactForm";
+import contactFormStyles from "@/components/contactForm.module.css";
 import SectionBand from "@/components/sectionBand";
-import Spacer from "@/components/spacer";
 
 export default function OurTeam() {
   return (
@@ -67,28 +66,27 @@ export default function OurTeam() {
       </SectionBand>
       <SectionBand alt>
         <SquishToMiddle>
-        <ContentBlock titleText="Contact Us">
-          <SideBySide>
-            <div>
+          <div className={styles.contactLayout}>
+            <div className={styles.contactImagePanel}>
               <Image
-                className={styles.sideBySideImage}
+                className={styles.contactHeroImage}
                 src="/img/presentation.avif"
                 alt="A team member helping out an older adult"
                 width={500}
                 height={500}
               />
             </div>
-            <div>
-              Have a question about our services?
-              <br />
-              <br />
-              Use this quick-and-easy contact form and we&apos;ll get back to
-              you within a week.
-              <Spacer size="small" />
-              <ContactForm />
+            <div className={styles.contactFormColumn}>
+              <h2 className={styles.contactHeading}>Contact Us</h2>
+              <p className={styles.contactLead}>
+                Have a question about our services? Use this quick-and-easy
+                contact form and we&apos;ll get back to you within a week.
+              </p>
+              <ContactForm
+                containerClassName={contactFormStyles.formContainerColumn}
+              />
             </div>
-          </SideBySide>
-        </ContentBlock>
+          </div>
         </SquishToMiddle>
       </SectionBand>
       </div>
