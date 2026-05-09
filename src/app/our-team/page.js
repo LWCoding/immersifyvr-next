@@ -19,9 +19,9 @@ export default function OurTeam() {
         <SquishToMiddle>
         <ContentBlock titleText="Our Team">
           <p className={styles.ourTeamIntro}>
-            Our project idea along with the team stems from our shared passion
+            Our project idea stems from our shared passion
             for virtual reality, game development, and improving the lives of
-            the elderly. Our team members are all young teenagers with
+            the elderly. We are all people with
             grandparents who face the same issues we work to solve with
             ImmersifyVR.
           </p>

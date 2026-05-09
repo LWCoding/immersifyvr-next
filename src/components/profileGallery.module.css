@@ -40,7 +40,7 @@
 }
 
 .profileInfoPanel:not(.profileInfoPanelOpen) {
-  min-height: 5.25rem;
+  min-height: 4.5rem;
 }
 
 .profileInfoPanelOpen {
@@ -56,7 +56,7 @@
 }
 
 .profileInfoPanel > .profileHeaderRow:not(.profileHeaderButton) {
-  padding: 14px 16px 10px;
+  padding: 14px 16px 12px;
 }
 
 .profileHeaderText {
@@ -67,7 +67,7 @@
 .profileHeaderButton {
   width: 100%;
   margin: 0;
-  padding: 14px 16px 10px;
+  padding: 14px 16px 12px;
   border: none;
   background: transparent;
   font: inherit;
@@ -76,6 +76,9 @@
   border-radius: 0;
   text-align: left;
   -webkit-tap-highlight-color: transparent;
+}
+
+.profileInfoPanel:not(.profileInfoPanelOpen) .profileHeaderButton {
   flex: 1 1 auto;
   min-height: 0;
 }
