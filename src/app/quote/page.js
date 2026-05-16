@@ -7,8 +7,9 @@ import QuoteForm from "@/components/quoteForm";
 
 export default function Quote() {
   return (
-    <div>
+    <div className={styles.page}>
       <Navbar />
+      <main className={styles.main}>
       <SquishToMiddle>
         <Spacer size="medium" />
         <div className={styles.quoteContainer}>
@@ -109,6 +110,7 @@ export default function Quote() {
         </div>
         <Spacer size="large" />
       </SquishToMiddle>
+      </main>
       <Footer />
     </div>
   );
