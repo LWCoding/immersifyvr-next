@@ -2,13 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: var(--panel-padding);
   background-color: var(--surface);
-  border-radius: 10px;
+  border-radius: var(--radius-md);
   max-width: 900px;
   margin: 0 auto;
   border: 1px solid var(--border-subtle);
   box-shadow: none;
+  box-sizing: border-box;
 }
 
 /* Full-width variant for two-column layouts (e.g. Our Team contact section) */
@@ -22,7 +23,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: var(--space-grid-tight);
   width: 100%;
   max-width: 600px;
   text-align: left;
@@ -32,7 +33,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 20px;
+  gap: var(--space-grid-tight);
   flex-wrap: wrap;
 }
 
@@ -84,7 +85,7 @@
   background-color: var(--blue-color);
   color: #ffffff;
   border: none;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   padding: 12px 24px;
   font-size: 16px;
   cursor: pointer;
@@ -98,19 +99,19 @@
 .thankYouMessage {
   text-align: center;
   color: var(--text-color);
-  padding: 2rem;
+  padding: var(--space-grid);
   background-color: var(--accent-color);
-  border-radius: 10px;
+  border-radius: var(--radius-md);
 }
 
 .reloadButton {
-  margin: 1.5rem 0;
+  margin: var(--space-grid-tight) 0;
   padding: 0.5rem 1rem;
   background-color: var(--blue-color);
   border: none;
   color: #ffffff;
   font-size: 1rem;
-  border-radius: 9999px;
+  border-radius: var(--radius-pill);
   cursor: pointer;
 }
 
@@ -118,8 +119,11 @@
   background-color: var(--blue-hover-color);
 }
 
-/* Responsive stacking on smaller screens */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .formContainer {
+    padding: 1.5rem 1.25rem;
+  }
+
   .fieldGroup {
     flex-direction: column;
   }

@@ -14,6 +14,10 @@
   padding-top: 0.75rem;
 }
 
+.band.bandTightBottom {
+  padding-bottom: 1rem;
+}
+
 /* Services video: restore top padding to match band bottom (navbar sits above this band, not inside it) */
 .band.bandTightTop.bandVideoLead {
   padding-top: 3rem;
@@ -30,6 +34,10 @@
 
   .band.bandTightTop.bandVideoLead {
     padding-top: 2.25rem;
+  }
+
+  .band.bandTightBottom {
+    padding-bottom: 0.75rem;
   }
 }
 

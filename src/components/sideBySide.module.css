@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  gap: 2rem;
+  gap: var(--space-grid);
 }
 
 .sideBySide > * {
@@ -16,7 +16,7 @@
 .sideBySide > * > img {
   padding: 1rem;
   object-fit: cover;
-  border-radius: 14px;
+  border-radius: var(--radius-sm);
 }
 
 /* Add spacing between consecutive SideBySide components (PC view) */

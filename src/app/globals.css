@@ -14,6 +14,22 @@
   --band-alt: #eef4ff;
 
   --site-max-width: 1200px;
+
+  /* Border radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-pill: 999px;
+
+  /* Typography */
+  --section-title-size: 1.8rem;
+  --subsection-title-size: 1.5rem;
+
+  /* Spacing */
+  --space-grid: 2rem;
+  --space-grid-tight: 1.5rem;
+  --space-page-gutter: 2rem;
+  --panel-padding: 2rem 2.5rem;
 }
 
 * {

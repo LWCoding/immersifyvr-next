@@ -11,7 +11,7 @@ export default function Quote() {
       <Navbar />
       <main className={styles.main}>
       <SquishToMiddle>
-        <Spacer size="medium" />
+        <Spacer size="large" />
         <div className={styles.quoteContainer}>
           <div className={styles.contactDetails}>
             <h2>Get in Touch</h2>

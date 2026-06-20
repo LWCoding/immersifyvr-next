@@ -298,7 +298,7 @@
 .testimonialsCards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.25rem;
+  gap: var(--space-grid-tight);
   align-items: stretch;
   margin-top: 0.5rem;
 }
@@ -310,14 +310,14 @@
   text-align: center;
   padding: 1.1rem 1.1rem 1.25rem;
   border: 1px solid var(--border-subtle);
-  border-radius: 18px;
+  border-radius: var(--radius-lg);
   background: #ffffff;
 }
 
 .testimonialCardAvatar {
   width: 88px;
   height: 88px;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   overflow: hidden;
   border: 1px solid var(--border-subtle);
   margin-bottom: 0.75rem;
@@ -360,7 +360,7 @@
 .testimonialMedia {
   width: 180px;
   height: 180px;
-  border-radius: 18px;
+  border-radius: var(--radius-lg);
   overflow: hidden;
   border: 1px solid var(--border-subtle);
   background: #ffffff;
@@ -525,16 +525,36 @@
   }
 }
 
+/* Core Pillars — 2×2 grid, equal heights synced by PillarsGrid */
+.pillarsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-grid);
+}
+
+.pillarsGrid .featureCard {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .pillarsGrid {
+    grid-template-columns: 1fr;
+    gap: var(--space-grid-tight);
+  }
+}
+
 /* Feature Card Styles */
 .featureCard {
   background-color: #ffffff;
   border: 1px solid var(--border-subtle);
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   box-shadow: none;
-  padding: 1rem 20px 20px;
+  padding: 20px;
   text-align: center;
   margin: 0;
-  min-height: 260px;
+  min-height: 0;
   height: auto;
   width: 100%;
   min-width: 0;
@@ -566,7 +586,7 @@
 
 .featureTitle {
   margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+  font-size: var(--subsection-title-size);
   font-weight: 600;
   color: var(--text-color);
 }
@@ -581,7 +601,7 @@
   .featureCard {
     margin: 0;
     min-height: 0;
-    padding: 1rem 16px 16px;
+    padding: 20px;
   }
 
   .featureTitle {

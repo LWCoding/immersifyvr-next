@@ -21,13 +21,13 @@
 .whatWeOfferContainer {
   display: flex;
   flex-direction: column;
-  margin-top: 1.5rem;
+  margin-top: var(--space-grid-tight);
 }
 
 .offerRow {
   display: flex;
   align-items: flex-start;
-  gap: 2rem;
+  gap: var(--space-grid);
   height: 250px;
   margin-bottom: 2rem;
 }
@@ -40,7 +40,7 @@
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
 }
 
 .offerText {
@@ -55,6 +55,8 @@
 
 .offerText h2 {
   margin-bottom: 0.5rem;
+  font-size: var(--subsection-title-size);
+  font-weight: 600;
   color: var(--text-color);
 }
 
@@ -66,7 +68,7 @@
 @media (max-width: 768px) {
   .offerRow {
     flex-direction: column;
-    gap: 1rem;
+    gap: var(--space-grid-tight);
     height: auto;
     margin-bottom: 2.5rem;
   }
@@ -104,7 +106,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    gap: 1.5rem 2rem;
+    gap: var(--space-grid-tight);
   }
 
   .offerRow {
@@ -141,8 +143,8 @@
   display: flex;
   align-items: stretch;
   justify-content: space-between;
-  gap: 1.5rem;
-  margin-top: 1rem;
+  gap: var(--space-grid);
+  margin-top: var(--space-grid-tight);
   width: 100%;
 }
 
@@ -150,13 +152,13 @@
 @media (max-width: 768px) {
   .servicesGrid {
     flex-direction: column;
-    gap: 1rem;
+    gap: var(--space-grid-tight);
   }
 
   .featureCard {
-    padding: 16px;
+    padding: 20px;
     height: auto;
-    min-height: 300px;
+    min-height: 0;
   }
 
   .featureTitle {
@@ -172,12 +174,12 @@
 .featureCard {
   background-color: #ffffff;
   border: 1px solid var(--border-subtle);
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   padding: 20px;
   text-align: center;
-  margin: 1rem 0;
+  margin: 0;
   height: auto;
-  min-height: 320px;
+  min-height: 0;
   flex: 1 1 0;
   max-width: none;
   display: flex;
@@ -221,7 +223,7 @@
 
 .featureTitle {
   margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+  font-size: var(--subsection-title-size);
   font-weight: 600;
   color: var(--text-color);
 }
@@ -230,7 +232,7 @@
   margin: 0;
   line-height: 1.6;
   color: var(--text-color);
-  text-align: left;
+  text-align: center;
 }
 
 .featureDescription p {
@@ -239,7 +241,7 @@
 
 /* Quote Section with Background Image */
 .quoteSection {
-  margin: 4rem 0 0;
+  margin: 1.5rem 0 0;
   width: 100%;
 }
 
@@ -290,12 +292,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: var(--space-grid-tight);
 }
 
 .quoteHeader {
   color: white;
-  font-size: 2.5rem;
+  font-size: var(--section-title-size);
   font-weight: 600;
   margin: 0;
   text-align: center;
@@ -308,10 +310,10 @@
   }
 
   .quoteHeader {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .quoteContent {
-    gap: 1rem;
+    gap: var(--space-grid-tight);
   }
 }

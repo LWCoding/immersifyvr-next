@@ -8,6 +8,7 @@ import Footer from "@/components/footer";
 import QuoteButton from "@/components/quoteButton";
 import ContentBlock from "@/components/contentBlock";
 import SideBySide from "@/components/sideBySide";
+import PillarsGrid from "@/components/pillarsGrid";
 import SquishToMiddle from "@/components/squishToMiddle";
 import ImageGallery from "@/components/imageGallery";
 
@@ -183,8 +184,8 @@ export default function Home() {
           titleText="Our Core Pillars"
           headerSpacerSize="medium"
         >
-          <SideBySide>
-            <div className={styles.featureCard}>
+          <PillarsGrid className={styles.pillarsGrid}>
+            <div className={styles.featureCard} data-pillar-card>
               <div className={styles.featureCardContent}>
                 <div className={styles.featureCardHeader}>
                   <div className={styles.featureIcon}>
@@ -213,7 +214,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className={styles.featureCard}>
+            <div className={styles.featureCard} data-pillar-card>
               <div className={styles.featureCardContent}>
                 <div className={styles.featureCardHeader}>
                   <div className={styles.featureIcon}>
@@ -246,9 +247,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          </SideBySide>
-          <SideBySide>
-            <div className={styles.featureCard}>
+            <div className={styles.featureCard} data-pillar-card>
               <div className={styles.featureCardContent}>
                 <div className={styles.featureCardHeader}>
                   <div className={styles.featureIcon}>
@@ -272,15 +271,14 @@ export default function Home() {
                   <h2 className={styles.featureTitle}>Lowering Barriers</h2>
                 </div>
                 <p className={styles.featureDescription}>
-                ImmersifyVR works to lower the intimidating barriers
-                that often come with traditional exercise and new technology
-                by offering a more approachable, practical, and affordable
-                way for elderly and disabled users to stay active.
-
+                  ImmersifyVR works to lower the intimidating barriers
+                  that often come with traditional exercise and new technology
+                  by offering a more approachable, practical, and affordable
+                  way for elderly and disabled users to stay active.
                 </p>
               </div>
             </div>
-            <div className={styles.featureCard}>
+            <div className={styles.featureCard} data-pillar-card>
               <div className={styles.featureCardContent}>
                 <div className={styles.featureCardHeader}>
                   <div className={styles.featureIcon}>
@@ -308,7 +306,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          </SideBySide>
+          </PillarsGrid>
         </ContentBlock>
         </SquishToMiddle>
       </section>

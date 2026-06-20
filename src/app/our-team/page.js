@@ -15,7 +15,7 @@ export default function OurTeam() {
     <div>
       <Navbar />
       <div className={styles.contentBelowNav}>
-      <SectionBand tightTop>
+      <SectionBand>
         <SquishToMiddle>
         <ContentBlock titleText="Our Team">
           <p className={styles.ourTeamIntro}>
@@ -67,15 +67,13 @@ export default function OurTeam() {
       <SectionBand alt>
         <SquishToMiddle>
           <div className={styles.contactLayout}>
-            <div className={styles.contactImagePanel}>
-              <Image
-                className={styles.contactHeroImage}
-                src="/img/presentation.avif"
-                alt="A team member helping out an older adult"
-                width={500}
-                height={500}
-              />
-            </div>
+            <Image
+              className={styles.contactHeroImage}
+              src="/img/presentation.avif"
+              alt="A team member helping out an older adult"
+              width={500}
+              height={500}
+            />
             <div className={styles.contactFormColumn}>
               <h2 className={styles.contactHeading}>Contact Us</h2>
               <p className={styles.contactLead}>

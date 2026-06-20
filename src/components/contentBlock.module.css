@@ -1,10 +1,22 @@
 .contentBlock {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem var(--space-page-gutter);
 }
 
 .titleText {
   margin: 0;
   text-align: center;
+  font-size: var(--section-title-size);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .contentBlock {
+    padding: 0.5rem 1rem;
+  }
+
+  .titleText {
+    font-size: 1.5rem;
+  }
 }
 
 .divider {
