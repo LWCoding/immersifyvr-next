@@ -12,7 +12,8 @@
   min-width: 0;
 }
 
-.sideBySide img {
+/* Direct column images only — not carousel galleries nested deeper */
+.sideBySide > * > img {
   padding: 1rem;
   object-fit: cover;
   border-radius: 14px;

@@ -34,9 +34,9 @@ export default function Home() {
               Welcome to <span>ImmersifyVR</span>
             </h2>
             <p>
-              We offer <strong>story-driven experiences</strong> that empower
+              We offer story-driven experiences that empower
               the elderly or the disabled to become{" "}
-              <strong>physically active</strong>.
+              physically active.
             </p>
             <QuoteButton />
           </div>
@@ -198,8 +198,8 @@ export default function Home() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     >
-                      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                      <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                      <path d="M12 7v14"></path>
+                      <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
                     </svg>
                   </div>
                   <h2 className={styles.featureTitle}>Engaging Storylines</h2>
@@ -227,9 +227,11 @@ export default function Home() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     >
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-                      <path d="M12 17h.01"></path>
+                      <circle cx="16" cy="4" r="1"></circle>
+                      <path d="m18 19 1-7-6 1"></path>
+                      <path d="m5 8 3-3 5.5 3-2.36 3.5"></path>
+                      <path d="M4.24 14.5a5 5 0 0 0 6.88 6"></path>
+                      <path d="M13.76 17.5a5 5 0 0 0-6.88-6"></path>
                     </svg>
                   </div>
                   <h2 className={styles.featureTitle}>Accessible Design</h2>
@@ -260,10 +262,11 @@ export default function Home() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     >
-                      <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
-                      <path d="M21 3v5h-5"></path>
-                      <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
-                      <path d="M3 21v-5h5"></path>
+                      <path d="M13 4h3a2 2 0 0 1 2 2v14"></path>
+                      <path d="M2 20h3"></path>
+                      <path d="M13 20h9"></path>
+                      <path d="M10 12v.01"></path>
+                      <path d="M13 4.562v16.157a1 1 0 0 1-1.242.97L5 20V5.562a2 2 0 0 1 1.515-1.94l4-1A2 2 0 0 1 13 4.561Z"></path>
                     </svg>
                   </div>
                   <h2 className={styles.featureTitle}>Lowering Barriers</h2>
@@ -291,8 +294,7 @@ export default function Home() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     >
-                      <line x1="12" y1="1" x2="12" y2="23"></line>
-                      <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                     </svg>
                   </div>
                   <h2 className={styles.featureTitle}>Staying Active</h2>
