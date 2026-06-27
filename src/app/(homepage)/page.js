@@ -11,6 +11,22 @@ import SideBySide from "@/components/sideBySide";
 import PillarsGrid from "@/components/pillarsGrid";
 import SquishToMiddle from "@/components/squishToMiddle";
 import ImageGallery from "@/components/imageGallery";
+import HeroSlideshow from "@/components/heroSlideshow";
+
+const HERO_SLIDESHOW_IMAGES = [
+  "/img/chateau-1.avif",
+  "/img/chateau-2.avif",
+  "/img/chateau-3.avif",
+  "/img/chateau-4.avif",
+  "/img/chateau-5.avif",
+  "/img/chateau-6.avif",
+  "/img/chateau-7.avif",
+  "/img/chateau-8.avif",
+  { src: "/img/chateau-9.avif", objectPosition: "center 38%" },
+  "/img/chateau-10.avif",
+  { src: "/img/chateau-11.avif", objectPosition: "center 28%" },
+  { src: "/img/presentation.avif", objectPosition: "center 22%" },
+];
 
 export default function Home() {
   return (
@@ -18,17 +34,7 @@ export default function Home() {
       <Navbar />
 
       <div className={styles.hero}>
-        <div className={styles.heroBackdrop} aria-hidden="true">
-          <Image
-            src="/img/chateau-1.avif"
-            alt=""
-            fill
-            priority
-            className={styles.heroBackdropImage}
-            sizes="100vw"
-          />
-          <div className={styles.heroBackdropScrim} />
-        </div>
+        <HeroSlideshow images={HERO_SLIDESHOW_IMAGES} />
         <div className={styles.heroInner}>
           <div className={styles.heroContent}>
             <h2>

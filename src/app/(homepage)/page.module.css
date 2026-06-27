@@ -27,38 +27,6 @@
   background: #2a2a2a;
 }
 
-.heroBackdrop {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.heroBackdropImage {
-  object-fit: cover;
-  object-position: center center;
-  width: 100%;
-  height: 100%;
-}
-
-.heroBackdropScrim {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.5);
-}
-
 .heroInner {
   position: relative;
   z-index: 2;
