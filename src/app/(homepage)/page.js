@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
 
@@ -11,6 +12,7 @@ import SideBySide from "@/components/sideBySide";
 import PillarsGrid from "@/components/pillarsGrid";
 import SquishToMiddle from "@/components/squishToMiddle";
 import ImageGallery from "@/components/imageGallery";
+import TestimonialsCarousel from "@/components/testimonialsCarousel";
 import HeroSlideshow from "@/components/heroSlideshow";
 
 const HERO_SLIDESHOW_IMAGES = [
@@ -29,6 +31,27 @@ const HERO_SLIDESHOW_IMAGES = [
 ];
 
 export default function Home() {
+  const testimonialsRef = useRef(null);
+  const [testimonialsVisible, setTestimonialsVisible] = useState(false);
+
+  useEffect(() => {
+    const section = testimonialsRef.current;
+    if (!section) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTestimonialsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -5% 0px" }
+    );
+
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div>
       <Navbar />
@@ -281,75 +304,16 @@ export default function Home() {
         </SquishToMiddle>
       </section>
 
-      <section className={`${styles.homeSection} ${styles.homeSectionAlt}`}>
+      <section
+        ref={testimonialsRef}
+        className={`${styles.homeSection} ${styles.homeSectionTestimonials} ${testimonialsVisible ? styles.testimonialsVisible : ""}`}
+      >
         <SquishToMiddle>
+          <div className={styles.testimonialsReveal}>
           <ContentBlock titleText="Testimonials">
-            <div className={styles.testimonialsCards}>
-              <div className={styles.testimonialCard}>
-                <div className={styles.testimonialCardAvatar}>
-                  <Image
-                    src="/img/gloria.avif"
-                    alt="Ms. Gloria"
-                    width={88}
-                    height={88}
-                  />
-                </div>
-                <div className={styles.testimonialCardMeta}>
-                  <div className={styles.testimonialName}>Ms. Gloria</div>
-                  <div className={styles.testimonialRole}>Senior Tester</div>
-                </div>
-                <p className={styles.testimonialText}>
-                  &ldquo;[It] would help us to go see things that are not
-                  possible anymore since we can&apos;t travel, we are limited in
-                  mobility … We wanna go see, and we can actually use these and
-                  actually place yourself there, and be on the boat. And see
-                  things that you wouldn&apos;t otherwise.&rdquo;
-                </p>
-              </div>
-
-              <div className={styles.testimonialCard}>
-                <div className={styles.testimonialCardAvatar}>
-                  <Image
-                    src="/img/ed1.avif"
-                    alt="Ed Loeswick"
-                    width={88}
-                    height={88}
-                  />
-                </div>
-                <div className={styles.testimonialCardMeta}>
-                  <div className={styles.testimonialName}>Ed Loeswick</div>
-                  <div className={styles.testimonialRole}>Personal Trainer</div>
-                </div>
-                <p className={styles.testimonialText}>
-                  &ldquo;You got something [older adults] really want…
-                  Conceptually, it&apos;s a great idea. And in terms of people
-                  liking to use it? Off the charts.&rdquo;
-                </p>
-              </div>
-
-              <div className={styles.testimonialCard}>
-                <div className={styles.testimonialCardAvatar}>
-                  <Image
-                    src="/img/bob.avif"
-                    alt="Bob (Chateau Cupertino)"
-                    width={88}
-                    height={88}
-                  />
-                </div>
-                <div className={styles.testimonialCardMeta}>
-                  <div className={styles.testimonialName}>
-                    Bob (Chateau Cupertino)
-                  </div>
-                  <div className={styles.testimonialRole}>Senior Tester</div>
-                </div>
-                <p className={styles.testimonialText}>
-                  &ldquo;In the afternoon I get really lonely and bored,
-                  because just the tablet is not enough. I think this virtual
-                  reality thing would make it more fun.&rdquo; (paraphrased)
-                </p>
-              </div>
-            </div>
+            <TestimonialsCarousel />
           </ContentBlock>
+          </div>
         </SquishToMiddle>
       </section>
 

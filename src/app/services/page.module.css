@@ -9,15 +9,6 @@
   }
 }
 
-.videoDemo {
-  display: block;
-  margin-inline: auto;
-  aspect-ratio: 16 / 9;
-  /* Shorter than full-bleed 16:9 on large screens; also caps height ~52vh on short viewports */
-  width: min(100%, 800px, calc(52vh * 16 / 9));
-  border: 0;
-}
-
 .whatWeOfferContainer {
   display: flex;
   flex-direction: column;

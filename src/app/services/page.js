@@ -6,27 +6,14 @@ import ContentBlock from "@/components/contentBlock";
 import SquishToMiddle from "@/components/squishToMiddle";
 import QuoteButton from "@/components/quoteButton";
 import SectionBand from "@/components/sectionBand";
+import ServicesVideoHero from "@/components/servicesVideoHero";
 
 export default function Services() {
   return (
     <div>
       <Navbar />
+      <ServicesVideoHero />
       <div className={styles.contentBelowNav}>
-      <SectionBand tightTop videoLead>
-        <SquishToMiddle>
-        <ContentBlock>
-          <iframe
-            className={styles.videoDemo}
-            src="https://www.youtube.com/embed/Ayzf8Rt9lu8?si=FTobvLvP9wEoCXDF"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
-        </ContentBlock>
-        </SquishToMiddle>
-      </SectionBand>
       <SectionBand alt>
         <SquishToMiddle>
         <ContentBlock titleText="What We Offer">
