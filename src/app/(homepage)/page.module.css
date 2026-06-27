@@ -519,7 +519,7 @@
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   box-shadow: none;
-  padding: 20px;
+  padding: 0;
   text-align: center;
   margin: 0;
   min-height: 0;
@@ -530,6 +530,18 @@
   flex-direction: column;
   justify-content: flex-start;
   box-sizing: border-box;
+  overflow: hidden;
+}
+
+.featureCardImage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  flex: none;
+}
+
+.featureCardImg {
+  object-fit: cover;
 }
 
 .featureCardContent {
@@ -537,7 +549,7 @@
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
-  padding-top: 0rem;
+  padding: 20px;
 }
 
 .featureCardHeader {
@@ -569,6 +581,9 @@
   .featureCard {
     margin: 0;
     min-height: 0;
+  }
+
+  .featureCardContent {
     padding: 20px;
   }
 

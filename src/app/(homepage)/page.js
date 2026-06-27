@@ -120,6 +120,15 @@ export default function Home() {
         >
           <PillarsGrid className={styles.pillarsGrid}>
             <div className={styles.featureCard} data-pillar-card>
+              <div className={styles.featureCardImage}>
+                <Image
+                  src="/img/swimming-1.avif"
+                  alt="Engaging Storylines"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className={styles.featureCardImg}
+                />
+              </div>
               <div className={styles.featureCardContent}>
                 <div className={styles.featureCardHeader}>
                   <div className={styles.featureIcon}>
@@ -149,6 +158,15 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.featureCard} data-pillar-card>
+              <div className={styles.featureCardImage}>
+                <Image
+                  src="/img/chateau-2.avif"
+                  alt="Accessible Design"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className={styles.featureCardImg}
+                />
+              </div>
               <div className={styles.featureCardContent}>
                 <div className={styles.featureCardHeader}>
                   <div className={styles.featureIcon}>
@@ -182,6 +200,15 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.featureCard} data-pillar-card>
+              <div className={styles.featureCardImage}>
+                <Image
+                  src="/img/chateau-10.avif"
+                  alt="Lowering Barriers"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className={styles.featureCardImg}
+                />
+              </div>
               <div className={styles.featureCardContent}>
                 <div className={styles.featureCardHeader}>
                   <div className={styles.featureIcon}>
@@ -213,6 +240,15 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.featureCard} data-pillar-card>
+              <div className={styles.featureCardImage}>
+                <Image
+                  src="/img/chateau-11.avif"
+                  alt="Staying Active"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className={styles.featureCardImg}
+                />
+              </div>
               <div className={styles.featureCardContent}>
                 <div className={styles.featureCardHeader}>
                   <div className={styles.featureIcon}>
