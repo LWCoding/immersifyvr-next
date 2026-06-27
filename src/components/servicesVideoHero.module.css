@@ -15,30 +15,106 @@
   border: 0;
 }
 
-.volumeButton {
+.volumeControl {
   position: absolute;
   right: 1.25rem;
   bottom: 1.25rem;
   z-index: 2;
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  padding: 0;
+  gap: 0.35rem;
+  padding: 0.35rem 0.65rem 0.35rem 0.35rem;
   border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: var(--radius-pill);
   background: rgba(15, 23, 42, 0.55);
-  color: #ffffff;
-  cursor: pointer;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-.volumeButton:hover {
+.volumeControl:hover,
+.volumeControl:focus-within {
   background: rgba(15, 23, 42, 0.72);
   border-color: rgba(255, 255, 255, 0.55);
+}
+
+.volumeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.volumeButton:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.volumeSliderLabel {
+  display: flex;
+  align-items: center;
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: width 0.25s ease, opacity 0.2s ease;
+}
+
+.volumeControl:hover .volumeSliderLabel,
+.volumeControl:focus-within .volumeSliderLabel {
+  width: 6.5rem;
+  opacity: 1;
+}
+
+.volumeSlider {
+  width: 6.5rem;
+  height: 4px;
+  margin: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  background: rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.volumeSlider::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.volumeSlider::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  margin-top: -5px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background: var(--blue-color);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+.volumeSlider::-moz-range-track {
+  height: 4px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.volumeSlider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background: var(--blue-color);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
 }
 
 @media (max-width: 768px) {
@@ -46,10 +122,32 @@
     --hero-nav-overlap: 4.5rem;
   }
 
-  .volumeButton {
+  .volumeControl {
     right: 1rem;
     bottom: 1rem;
-    width: 40px;
-    height: 40px;
+    padding-right: 0.55rem;
+  }
+
+  .volumeButton {
+    width: 32px;
+    height: 32px;
+  }
+
+  .volumeControl .volumeSliderLabel,
+  .volumeControl:hover .volumeSliderLabel,
+  .volumeControl:focus-within .volumeSliderLabel {
+    width: 5rem;
+    opacity: 1;
+  }
+
+  .volumeSlider {
+    width: 5rem;
+  }
+}
+
+@media (hover: none) {
+  .volumeControl .volumeSliderLabel {
+    width: 5rem;
+    opacity: 1;
   }
 }

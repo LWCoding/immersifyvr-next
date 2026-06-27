@@ -47,16 +47,46 @@ function VolumeOffIcon() {
 
 export default function ServicesVideoHero() {
   const videoRef = useRef(null);
+  const [volume, setVolume] = useState(0.7);
   const [muted, setMuted] = useState(true);
+
+  function applyVolume(nextVolume) {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const clamped = Math.min(1, Math.max(0, nextVolume));
+    video.volume = clamped;
+    setVolume(clamped);
+
+    if (clamped === 0) {
+      video.muted = true;
+      setMuted(true);
+      return;
+    }
+
+    video.muted = false;
+    setMuted(false);
+  }
 
   function toggleMute() {
     const video = videoRef.current;
     if (!video) return;
 
-    const nextMuted = !video.muted;
-    video.muted = nextMuted;
-    setMuted(nextMuted);
+    if (muted || volume === 0) {
+      const restore = volume > 0 ? volume : 0.7;
+      applyVolume(restore);
+      return;
+    }
+
+    video.muted = true;
+    setMuted(true);
   }
+
+  function handleVolumeChange(event) {
+    applyVolume(Number(event.target.value));
+  }
+
+  const sliderValue = muted ? 0 : volume;
 
   return (
     <section className={styles.videoHero} aria-label="ImmersifyVR demo video">
@@ -71,15 +101,32 @@ export default function ServicesVideoHero() {
         preload="auto"
         aria-label="ImmersifyVR demo video"
       />
-      <button
-        type="button"
-        className={styles.volumeButton}
-        onClick={toggleMute}
-        aria-label={muted ? "Unmute video" : "Mute video"}
-        aria-pressed={!muted}
-      >
-        {muted ? <VolumeOffIcon /> : <VolumeOnIcon />}
-      </button>
+      <div className={styles.volumeControl}>
+        <button
+          type="button"
+          className={styles.volumeButton}
+          onClick={toggleMute}
+          aria-label={muted ? "Unmute video" : "Mute video"}
+          aria-pressed={!muted}
+        >
+          {muted ? <VolumeOffIcon /> : <VolumeOnIcon />}
+        </button>
+        <div className={styles.volumeSliderLabel}>
+          <input
+            type="range"
+            className={styles.volumeSlider}
+            min="0"
+            max="1"
+            step="0.01"
+            value={sliderValue}
+            onChange={handleVolumeChange}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            aria-valuenow={Math.round(sliderValue * 100)}
+            aria-label="Video volume"
+          />
+        </div>
+      </div>
     </section>
   );
 }
